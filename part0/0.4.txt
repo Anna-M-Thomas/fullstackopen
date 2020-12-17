@@ -1,0 +1,24 @@
+browser ==> server
+	HTTP POST https://studies.cs.helsinki.fi/exampleapp/new_note
+	//server adds new note to notes array
+	//server responds with code 302 telling browser to reload the page
+
+browser ==> server
+	HTTP GET https://studies.cs.helsinki.fi/exampleapp/main.css
+
+server ==> browser 
+	main.css
+
+browser ==> server
+	HTTP GET https://studies.cs.helsinki.fi/exampleapp/main.js
+
+server ==> browser 
+	main.js
+	//main.js contains instructions to get JSON data, so browser does that
+
+browser ==> server
+	HTTP GET https://studies.cs.helsinki.fi/exampleapp/JSON.js
+
+server ==> browser 
+	JSON.js
+	//browser renders page with Javascript after operation to get JSON completed successfully

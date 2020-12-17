@@ -1,0 +1,26 @@
+browser ==> server
+	HTTP GET https://studies.cs.helsinki.fi/exampleapp/spa
+
+server ==> browser
+	html file
+	//html file contains links to css and javascript files, so browser gets those
+
+browser ==> server
+	HTTP GET https://studies.cs.helsinki.fi/exampleapp/main.css
+
+server ==> browser
+	main.css
+
+browser ==> server
+	HTTP GET https://studies.cs.helsinki.fi/exampleapp/spa.js
+
+server ==> browser 
+	spa.js
+	//spa.js contains instructions to get JSON data, so browser does that
+
+browser ==> server
+	HTTP GET https://studies.cs.helsinki.fi/exampleapp/data.json
+
+server ==> browser 
+	data.json
+	//browser renders page with Javascript after operation to get JSON completed successfully

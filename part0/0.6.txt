@@ -1,0 +1,6 @@
+browser ==> server
+	HTTP POST https://studies.cs.helsinki.fi/exampleapp/new_note_spa
+	//browser appends new note to unordered list in dom
+	//server adds new note to notes array
+	//that's it
+
