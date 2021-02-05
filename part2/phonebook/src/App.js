@@ -60,15 +60,23 @@ const App = () => {
             type: "success",
           });
         })
-        .catch(() => {
+        .catch((error) => {
+          console.log("The error has been catched");
+          console.log(error.response.data.error);
           showMessage({
-            content: `Information of ${person.name} has already been removed from server`,
+            content: `${error.response.data.error}`,
             type: "error",
           });
-          setPersons(
-            persons.filter((originalPerson) => originalPerson.id !== person.id)
-          );
         });
+      // .catch(() => {
+      //   showMessage({
+      //     content: `Information of ${person.name} has already been removed from server`,
+      //     type: "error",
+      //   });
+      //   setPersons(
+      //     persons.filter((originalPerson) => originalPerson.id !== person.id)
+      //   );
+      // });
       resetInfo();
       return;
     }
@@ -79,14 +87,26 @@ const App = () => {
     }
     //Adds a new person since person doesn't exist (otherwise caught by first if statement)
     const newObject = { name: newName, number: newNumber };
-    backend.newPerson(newObject).then((returnedPerson) => {
-      setPersons(persons.concat(returnedPerson));
-      showMessage({
-        content: "Added new person",
-        type: "success",
+    backend
+      .newPerson(newObject)
+      .then((returnedPerson) => {
+        if (returnedPerson.name && returnedPerson.number) {
+          setPersons(persons.concat(returnedPerson));
+          showMessage({
+            content: "Added new person",
+            type: "success",
+          });
+          resetInfo();
+        }
+      })
+      .catch((error) => {
+        console.log("The error has been catched");
+        console.log(error.response.data.error);
+        showMessage({
+          content: `${error.response.data.error}`,
+          type: "error",
+        });
       });
-      resetInfo();
-    });
   };
 
   const filteredPersons = persons.filter((person) =>
@@ -96,7 +116,7 @@ const App = () => {
   const deleteHandler = (person) => {
     if (window.confirm(`Really delete ${person.name}?`)) {
       backend.deletePerson(person.id).then((response) => {
-        if (response.status === 200) {
+        if (response.status === 204) {
           showMessage({
             content: "Successfully deleted",
             type: "success",
