@@ -1,0 +1,28 @@
+body {
+  line-height: 1.5;
+  margin: 5px;
+}
+
+.message {
+  font-size: 20px;
+  padding: 10px;
+  display: inline-block;
+  margin-bottom: 5px;
+}
+
+.alert {
+  color: darkred;
+  border: 1px red solid;
+}
+
+.success {
+  color: darkgreen;
+  border: 1px green solid;
+}
+
+.blog {
+  border: 1px black solid;
+  padding: 10px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}

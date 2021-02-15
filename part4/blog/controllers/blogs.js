@@ -3,7 +3,8 @@ const jwt = require("jsonwebtoken");
 const Blog = require("../models/blog");
 const User = require("../models/user");
 
-//helper function to get token
+//Everyone populates "user" with username, name, id, for consistency's sake
+//if I don't populate, user.name won't display on blogs details after updates/new posts
 
 blogsRouter.get("/", async (request, response, next) => {
   try {
@@ -23,6 +24,7 @@ blogsRouter.delete("/:id", async (request, response, next) => {
     const token = request.token;
 
     const decodedToken = jwt.verify(token, process.env.SECRET);
+
     if (!token || !decodedToken.id) {
       return response.status(401).json({ error: "token missing or invalid" });
     }
@@ -42,14 +44,18 @@ blogsRouter.delete("/:id", async (request, response, next) => {
   }
 });
 
+//Put only increments likes
 blogsRouter.put("/:id", async (request, response, next) => {
   try {
-    const likes = request.body;
     const updatedBlog = await Blog.findByIdAndUpdate(
       { _id: `${request.params.id}` },
-      likes,
+      { $inc: { likes: 1 } },
       { new: true }
-    );
+    ).populate("user", {
+      username: 1,
+      name: 1,
+      id: 1,
+    });
     response.json(updatedBlog);
   } catch (error) {
     next(error);
@@ -80,10 +86,16 @@ blogsRouter.post("/", async (request, response, next) => {
     });
 
     const result = await blog.save();
+    //Instead of figuring out how to populate after saving...
+    const populatedResult = await Blog.findById(result.id).populate("user", {
+      username: 1,
+      name: 1,
+      id: 1,
+    });
 
     user.blogs = user.blogs.concat(result._id);
     await user.save();
-    response.status(201).json(result);
+    response.status(201).json(populatedResult);
   } catch (error) {
     next(error);
   }

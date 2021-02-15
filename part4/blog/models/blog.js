@@ -1,9 +1,9 @@
 const mongoose = require("mongoose");
 
 const blogSchema = new mongoose.Schema({
-  title: String,
-  author: String,
-  url: String,
+  title: { type: String, minlength: 3 },
+  author: { type: String, minlength: 3 },
+  url: { type: String, minlength: 3 },
   likes: Number,
   user: { type: mongoose.Schema.Types.ObjectId, ref: "User" },
 });
