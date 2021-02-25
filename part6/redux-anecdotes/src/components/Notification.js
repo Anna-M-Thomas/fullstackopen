@@ -2,8 +2,7 @@ import React from "react";
 import { useSelector } from "react-redux";
 
 const Notification = () => {
-  const message = useSelector((state) => state.message);
-  console.log("message", message);
+  const message = useSelector((state) => state.message.content);
 
   const style = {
     border: "solid",

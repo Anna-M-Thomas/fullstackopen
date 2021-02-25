@@ -1,16 +1,14 @@
 import React from "react";
 import { createAnecdote } from "../reducers/anecdoteReducer";
-import { useDispatch } from "react-redux";
+import { connect } from "react-redux";
 import { messageHelper } from "../reducers/notificationReducer";
 
-const Anecdoteform = () => {
-  const dispatch = useDispatch();
-
+const Anecdoteform = (props) => {
   const submitHandler = (event) => {
     event.preventDefault();
     const content = event.target.anecdote.value;
-    dispatch(createAnecdote(content));
-    dispatch(messageHelper(`Submitted anecdote ${content}`, 5000));
+    props.createAnecdote(content);
+    props.messageHelper(`Submitted anecdote ${content}`, 5000);
     event.target.anecdote.value = "";
   };
 
@@ -27,4 +25,4 @@ const Anecdoteform = () => {
   );
 };
 
-export default Anecdoteform;
+export default connect(null, { createAnecdote, messageHelper })(Anecdoteform);

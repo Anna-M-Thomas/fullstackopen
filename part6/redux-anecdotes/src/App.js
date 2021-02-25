@@ -1,7 +1,5 @@
 import React, { useEffect } from "react";
 import { useDispatch } from "react-redux";
-import { setMessage, removeMessage } from "./reducers/notificationReducer";
-//import { createAnecdote } from "./reducers/anecdoteReducer";
 import { initializeAll } from "./reducers/anecdoteReducer";
 import Anecdoteform from "./components/Anecdoteform";
 import Anecdotelist from "./components/Anecdotelist";

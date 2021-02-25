@@ -10,7 +10,7 @@ export const updateAnecdote = (id, votes) => {
   };
 };
 
-export const initializeAll = (anecdotes) => {
+export const initializeAll = () => {
   return async (dispatch) => {
     const anecdotes = await anecdoteHandler.getAll();
     dispatch({
@@ -31,8 +31,8 @@ export const createAnecdote = (content) => {
 };
 
 const anecdoteReducer = (state = [], action) => {
-  console.log("state now: ", state);
-  console.log("action", action);
+  // console.log("state now: ", state);
+  // console.log("action", action);
   switch (action.type) {
     case "INITIALIZE_ALL":
       return action.data;
