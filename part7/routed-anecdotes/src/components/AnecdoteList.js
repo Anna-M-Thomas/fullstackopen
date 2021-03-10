@@ -1,0 +1,17 @@
+import React from "react";
+import { Link } from "react-router-dom";
+
+const AnecdoteList = ({ anecdotes }) => (
+  <div>
+    <h2>Anecdotes</h2>
+    {anecdotes.map((anecdote) => (
+      <ul key={anecdote.id}>
+        <li>
+          <Link to={`/anecdotes/${anecdote.id}`}>{anecdote.content}</Link>
+        </li>
+      </ul>
+    ))}
+  </div>
+);
+
+export default AnecdoteList;

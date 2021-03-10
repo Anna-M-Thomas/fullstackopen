@@ -1,0 +1,48 @@
+body {
+  line-height: 1.5;
+  margin: 5px;
+}
+
+.message {
+  font-size: 20px;
+  padding: 10px;
+  display: inline-block;
+  margin-bottom: 5px;
+}
+
+a {
+  color: #00867d;
+}
+
+a:hover {
+  background-color: #ffffee;
+}
+
+.alert {
+  color: darkred;
+  border: 1px red solid;
+}
+
+.success {
+  color: darkgreen;
+  border: 1px green solid;
+}
+
+.blog {
+  padding: 10px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.menu {
+  width: 100%;
+  background-color: pink;
+}
+
+.menu a {
+  padding: 10px;
+}
+
+Button {
+  margin: 10px;
+}
