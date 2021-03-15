@@ -1,0 +1,1598 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1671\cocoasubrtf600
+{\fonttbl\f0\fswiss\fcharset0 Helvetica-Bold;\f1\fmodern\fcharset0 Courier;\f2\fswiss\fcharset0 Helvetica;
+\f3\fnil\fcharset0 Menlo-Regular;\f4\froman\fcharset0 Times-Roman;\f5\fmodern\fcharset0 Courier-Bold;
+\f6\fnil\fcharset0 LucidaGrande;\f7\froman\fcharset0 Times-Italic;\f8\fnil\fcharset0 LucidaGrande-Bold;
+\f9\fmodern\fcharset0 Courier-Oblique;\f10\fnil\fcharset0 Menlo-Bold;}
+{\colortbl;\red255\green255\blue255;\red167\green255\blue205;\red127\green0\blue128;\red0\green0\blue0;
+\red0\green0\blue109;\red255\green255\blue255;\red144\green1\blue18;\red19\green118\blue70;\red0\green0\blue255;
+\red11\green90\blue180;\red101\green76\blue29;\red224\green116\blue59;\red157\green0\blue210;\red0\green0\blue233;
+\red11\green90\blue180;\red144\green1\blue18;\red101\green76\blue29;\red157\green0\blue210;\red0\green0\blue109;
+\red229\green158\blue61;\red52\green0\blue71;\red77\green0\blue105;\red19\green118\blue70;\red15\green112\blue1;
+\red32\green108\blue135;\red128\green0\blue128;\red245\green245\blue91;\red32\green108\blue135;\red218\green123\blue196;
+\red0\green0\blue233;\red107\green0\blue1;\red251\green0\blue7;\red165\green122\blue248;\red119\green198\blue250;
+}
+{\*\expandedcolortbl;;\cssrgb\c70256\c100000\c84085;\cssrgb\c57919\c12801\c57269;\cssrgb\c0\c0\c0;
+\cssrgb\c0\c6275\c50196;\cssrgb\c100000\c100000\c100000;\cssrgb\c63922\c8235\c8235;\cssrgb\c3529\c52549\c34510;\cssrgb\c0\c0\c100000;
+\cssrgb\c0\c43922\c75686;\cssrgb\c47451\c36863\c14902;\cssrgb\c90778\c53523\c29203;\cssrgb\c68627\c0\c85882;\cssrgb\c0\c0\c93333;
+\cssrgb\c0\c43922\c75686;\cssrgb\c63922\c8235\c8235;\cssrgb\c47451\c36863\c14902;\cssrgb\c68627\c0\c85882;\cssrgb\c0\c6275\c50196;
+\cssrgb\c92341\c67997\c30073;\cssrgb\c26879\c5470\c34975;\cssrgb\c37964\c9215\c48780;\cssrgb\c3529\c52549\c34510;\cssrgb\c0\c50196\c0;
+\cssrgb\c14902\c49804\c60000;\cssrgb\c57919\c12801\c57269;\cssrgb\c96870\c95813\c42728;\cssrgb\c14902\c49804\c60000;\cssrgb\c88928\c57466\c81178;
+\cssrgb\c0\c0\c93333;\cssrgb\c50196\c0\c0;\cssrgb\c100000\c0\c0;\cssrgb\c71074\c57669\c98056;\cssrgb\c52963\c81959\c98386;
+}
+\paperw11900\paperh16840\margl1440\margr1440\vieww18060\viewh10140\viewkind0
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\b\fs36 \cf0 \cb2 Part 1\
+
+\fs24 \cb1 \
+Make a React app with create-react-app\
+\pard\pardeftab720\sl280\partightenfactor0
+
+\f1\b0 \cf3 \expnd0\expndtw0\kerning0
+npx create-react-app foldername\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f2 \cf0 \kerning1\expnd0\expndtw0 \
+You can run with \
+\pard\pardeftab720\sl280\partightenfactor0
+
+\f1 \cf3 \expnd0\expndtw0\kerning0
+npm start\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f2 \cf0 \kerning1\expnd0\expndtw0 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\b \cf0 Node\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f2\b0 \cf0 Node.js is a Javascript runtime environment. You can run it with \
+\pard\pardeftab720\sl280\partightenfactor0
+
+\f1 \cf3 \expnd0\expndtw0\kerning0
+node name_of_file.js
+\f2 \cf0 \kerning1\expnd0\expndtw0 \
+Or type node into the command line, or a browser developer tool console.\
+\
+\pard\pardeftab720\sl280\partightenfactor0
+
+\f0\b \cf0 Destructuring props
+\f2\b0 \
+\pard\pardeftab720\sl360\partightenfactor0
+
+\f3 \cf5 \cb6 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec5 props\cf4 \strokec4  = \{\cb1 \
+\cb6   \cf5 \strokec5 name:\cf4 \strokec4  \cf7 \strokec7 'Arto Hellas'\cf4 \strokec4 ,\cb1 \
+\cb6   \cf5 \strokec5 age:\cf4 \strokec4  \cf8 \strokec8 35\cf4 \strokec4 ,\cb1 \
+\cb6 \}\cb1 \
+\
+\cf9 \cb6 \strokec9 const\cf4 \strokec4  \{ \cf10 \strokec10 name\cf4 \strokec4 , \cf10 \strokec10 age\cf4 \strokec4  \} = \cf5 \strokec5 props\cf4 \cb1 \strokec4 \
+\
+\cf9 \cb6 \strokec9 const\cf4 \strokec4  \cf11 \strokec11 Hello\cf4 \strokec4  = (\{ \cf5 \strokec5 name\cf4 \strokec4 , \cf5 \strokec5 age\cf4 \strokec4  \}) \cf9 \strokec9 =>\cf4 \strokec4  \{\cb1 \
+\pard\pardeftab720\sl280\partightenfactor0
+
+\f1 \cf4 \outl0\strokewidth0 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f2 \cf0 \kerning1\expnd0\expndtw0 \
+\pard\pardeftab720\sl280\partightenfactor0
+
+\f0\b \cf0 Object spread syntax 
+\f2\b0 for copying an object and changing part of it\
+\pard\pardeftab720\sl360\partightenfactor0
+
+\f3 \cf9 \cb6 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec9 const\cf4 \strokec4  \cf10 \strokec10 clicks\cf4 \strokec4  = \{\cb1 \
+\cb6   \cf5 \strokec5 left:\cf4 \strokec4  \cf8 \strokec8 0\cf4 \strokec4 , \cf5 \strokec5 right:\cf4 \strokec4  \cf8 \strokec8 0\cf4 \cb1 \strokec4 \
+\cb6 \}\cb1 \
+\pard\pardeftab720\sl280\partightenfactor0
+
+\f2 \cf0 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 \
+Copies clicks, and adds 1 to left\
+\pard\pardeftab720\sl360\partightenfactor0
+
+\f3 \cf9 \cb6 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec9 const\cf4 \strokec4  \cf10 \strokec10 newClicks\cf4 \strokec4  = \{ \cb1 \
+\cb6   ...\cf5 \strokec5 clicks\cf4 \strokec4 , \cb1 \
+\cb6   \cf5 \strokec5 left:\cf4 \strokec4  \cf5 \strokec5 clicks\cf4 \strokec4 .\cf5 \strokec5 left\cf4 \strokec4  + \cf8 \strokec8 1\cf4 \strokec4  \cb1 \
+\cb6 \}
+\f1 \cf3 \cb1 \outl0\strokewidth0 \
+\pard\pardeftab720\sl280\partightenfactor0
+
+\f2 \cf0 \kerning1\expnd0\expndtw0 \
+
+\f0\b Function that return a function\
+
+\f2\b0 Useful if you want to make multiple event handlers that are similar to each other, but not exactly alike\
+https://fullstackopen.com/en/part1/a_more_complex_state_debugging_react_apps#function-that-returns-a-function\
+\
+
+\f0\b I don\'92t care if the folder is full, delete it\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f2\b0 \cf0 For example, if you used create-react-app but you didn\'92t want it to have its own git repository, run\
+\pard\pardeftab720\sl280\partightenfactor0
+
+\f1 \cf3 \expnd0\expndtw0\kerning0
+rm -rf .git\
+\
+\pard\pardeftab720\sl280\partightenfactor0
+
+\f0\b\fs36 \cf0 \cb12 \kerning1\expnd0\expndtw0 Part 2\
+\pard\pardeftab720\sl280\partightenfactor0
+
+\fs24 \cf0 \cb1 \
+Autocomplete console.log
+\f2\b0 \
+log + tab\
+\
+
+\f0\b Importing modules 
+\f2\b0 \
+\pard\pardeftab720\sl280\partightenfactor0
+
+\f1 \cf3 \expnd0\expndtw0\kerning0
+import defaultExport from "module-name"; 
+\f2 \cf4 <= Import entire module
+\f1 \cf3 \
+import \{ export1 \} from "module-name";\cf4  
+\f2 <= Import a single export
+\f1 \cf3 \
+\
+\pard\pardeftab720\sl280\partightenfactor0
+
+\f0\b \cf0 \kerning1\expnd0\expndtw0 Exporting modules/stuff from modules
+\f1\b0 \cf3 \expnd0\expndtw0\kerning0
+\
+\pard\pardeftab720\sl360\partightenfactor0
+
+\f3 \cf13 \cb6 \outl0\strokewidth0 \strokec13 export\cf4 \strokec4  \cf13 \strokec13 default\cf4 \strokec4  \cf5 \strokec5 Note\cf4 \cb1 \strokec4 \
+\cf13 \cb6 \strokec13 export\cf4 \strokec4  \{ \cf11 \strokec11 myFunction\cf4 \strokec4 , \cf5 \strokec5 myVariable\cf4 \strokec4  \};\cb1 \
+\cf13 \cb6 \strokec13 export\cf4 \strokec4  \cf9 \strokec9 const\cf4 \strokec4  \cf11 \strokec11 myFunction\cf4 \strokec4  = () \cf9 \strokec9 =>\cf4 \strokec4  \'85\cb1 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f2 \cf0 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 \
+\pard\pardeftab720\sl280\partightenfactor0
+
+\f0\b \cf0 Forms, controlled forms\
+
+\f2\b0 Add an onSubmit event handler to the form itself, and an onChange to the input fields. Save the values in state. Set the values of input fields to state (thus controlled form). On submit, prevent event default and use field values in state to make your object, whatever. \
+\
+
+\f0\b Filtering results\
+\pard\pardeftab720\sl280\partightenfactor0
+
+\f1\b0 \cf3 \expnd0\expndtw0\kerning0
+const notesToShow = showAll ? notes : notes.filter(note => note.important === true)\cf4 \
+\pard\pardeftab720\sl280\partightenfactor0
+
+\f2 \cf0 \kerning1\expnd0\expndtw0 \
+
+\f0\b Add devDependency \
+\pard\pardeftab720\sl280\partightenfactor0
+
+\f1\b0 \cf3 \expnd0\expndtw0\kerning0
+npm install <package-name> --save-dev\
+\pard\pardeftab720\sl280\partightenfactor0
+
+\f2 \cf0 \kerning1\expnd0\expndtw0 \
+
+\f0\b Scripts in package.json
+\f2\b0 \
+Stuff that was in there originally, like start: 
+\f1 \cf3 npm start
+\f2 \cf0 \
+Stuff that wasn\'92t (scripts you added)\cf3  npm run nameofscript\cf0 \
+\
+
+\f0\b Using JSON server
+\f2\b0 \
+Make a fake database file in the root directory (not inside src, the main folder!) called db.json and put some stuff in it. For example, an object with an array inside it \{notes: [\'93one\'94, \'93two\'94, \'93three]\}\
+Install json-server as a dev dependency.\
+To keep it running,\
+\pard\pardeftab720\sl280\partightenfactor0
+
+\f1 \cf0 npm run json-server --watch db.json --port 3001
+\f2 \
+package.json script==>\
+
+\f1 \'93server": "json-server --watch db.json --port 3001"
+\f2 \
+\
+Your \'93notes\'94 array will be a\cf4 t\cb6  
+\f4 \expnd0\expndtw0\kerning0
+\ul http://localhost:3001/notes\cb1 \ulnone  \
+\pard\pardeftab720\sl280\partightenfactor0
+
+\f2 \cf4 More details on how it behaves https://github.com/typicode/json-server\cf0 \kerning1\expnd0\expndtw0 \
+\
+\pard\pardeftab720\sl280\partightenfactor0
+
+\f0\b \cf0 Axios 
+\f2\b0 \
+Install axios for making requests, and import it as needed\
+\pard\pardeftab720\sl280\partightenfactor0
+
+\f1 \cf3 \expnd0\expndtw0\kerning0
+import axios from 'axios'\
+\pard\pardeftab720\sl280\partightenfactor0
+
+\f2 \cf0 \kerning1\expnd0\expndtw0 \
+eventually separate requests out to a services folder. One file for each endpoint? blogs.js for doing stuff to \'93/api/blogs,\'94 etc\
+\
+useEffect set to empty array, for when the component first mounts, and event handlers are good places to tell axios to do things. \
+\
+It\'92s easiest to save a base url \
+\pard\pardeftab720\sl360\partightenfactor0
+
+\f1 \cf9 \cb6 \expnd0\expndtw0\kerning0
+const\cf4  \cf15 baseUrl\cf4  = \cf16 "/api/blogs"\cf4 ;
+\f2 \cf0 \cb1 \kerning1\expnd0\expndtw0 \
+\pard\pardeftab720\sl280\partightenfactor0
+\cf0 \
+You can write as an async function or not, just return response data. \
+\pard\pardeftab720\sl360\partightenfactor0
+
+\f1 \cf9 \cb6 \expnd0\expndtw0\kerning0
+const\cf4  \cf17 getAll\cf4  = () \cf9 =>\cf4  \{\cb1 \
+\cb6   \cf9 const\cf4  \cf15 request\cf4  = \cf15 axios\cf4 .\cf17 get\cf4 (\cf15 baseUrl\cf4 );\cb1 \
+\cb6   \cf18 return\cf4  \cf15 request\cf4 .\cf17 then\cf4 ((\cf19 response\cf4 ) \cf9 =>\cf4  \cf19 response\cf4 .\cf19 data\cf4 );\cb1 \
+\cb6 \};\cb1 \
+\
+\cf9 \cb6 const\cf4  \cf17 deleteBlog\cf4  = \cf9 async\cf4  (\cf19 id\cf4 ) \cf9 =>\cf4  \{\cb1 \
+\cb6   \cf9 const\cf4  \cf15 response\cf4  = \cf18 await\cf4  \cf15 axios\cf4 .\cf17 delete\cf4 (\cf16 `\cf9 $\{\cf15 baseUrl\cf9 \}\cf16 /\cf9 $\{\cf19 id\cf9 \}\cf16 `\cf4 , \cf19 config\cf4 );\cb1 \
+\cb6   \cf18 return\cf4  \cf15 response\cf4 .\cf19 data\cf4 ;\cb1 \
+\cb6 \};
+\f3 \
+\
+\pard\pardeftab720\sl280\partightenfactor0
+
+\f2 \cf0 \cb1 \kerning1\expnd0\expndtw0 Shorthand, config optional
+\f3 \cf4 \cb6 \expnd0\expndtw0\kerning0
+\
+\pard\pardeftab720\sl360\partightenfactor0
+\cf5 \cb6 \outl0\strokewidth0 \strokec5 axios\cf4 \strokec4 .\cf11 \strokec11 get\cf4 \strokec4 (\cf5 \strokec5 url\cf4 \strokec4 [, \cf5 \strokec5 config\cf4 \strokec4 ])\cb1 \
+\cf5 \cb6 \strokec5 axios\cf4 \strokec4 .\cf11 \strokec11 delete\cf4 \strokec4 (\cf5 \strokec5 url\cf4 \strokec4 [, \cf5 \strokec5 config\cf4 \strokec4 ])\cb1 \
+\cf5 \cb6 \strokec5 axios\cf4 \strokec4 .\cf11 \strokec11 post\cf4 \strokec4 (\cf5 \strokec5 url\cf4 \strokec4 [, \cf5 \strokec5 data\cf4 \strokec4 [, \cf5 \strokec5 config\cf4 \strokec4 ]])\cb1 \
+\cf5 \cb6 \strokec5 axios\cf4 \strokec4 .\cf11 \strokec11 put\cf4 \strokec4 (\cf5 \strokec5 url\cf4 \strokec4 [, \cf5 \strokec5 data\cf4 \strokec4 [, \cf5 \strokec5 config\cf4 \strokec4 ]])\cb1 \
+\cf5 \cb6 \strokec5 axios\cf4 \strokec4 .\cf11 \strokec11 patch\cf4 \strokec4 (\cf5 \strokec5 url\cf4 \strokec4 [, \cf5 \strokec5 data\cf4 \strokec4 [, \cf5 \strokec5 config\cf4 \strokec4 ]])\cf4 \cb1 \outl0\strokewidth0 \
+\pard\pardeftab720\sl280\partightenfactor0
+
+\f2 \cf0 \kerning1\expnd0\expndtw0 Longhand, for reference\
+\pard\pardeftab720\sl280\partightenfactor0
+
+\f5\b \cf4 \expnd0\expndtw0\kerning0
+\
+\pard\pardeftab720\sl360\partightenfactor0
+
+\f3\b0 \cf11 \cb6 \outl0\strokewidth0 \strokec11 axios\cf4 \strokec4 (\{\cb1 \
+\cb6   \cf5 \strokec5 method:\cf4 \strokec4  \cf7 \strokec7 'post'\cf4 \strokec4 ,\cb1 \
+\cb6   \cf5 \strokec5 url:\cf4 \strokec4  \cf7 \strokec7 '/login'\cf4 \strokec4 ,\cb1 \
+\cb6   \cf5 \strokec5 data:\cf4 \strokec4  \{\cb1 \
+\cb6     \cf5 \strokec5 firstName:\cf4 \strokec4  \cf7 \strokec7 'Finn'\cf4 \strokec4 ,\cb1 \
+\cb6     \cf5 \strokec5 lastName:\cf4 \strokec4  \cf7 \strokec7 'Williams'\cf4 \cb1 \strokec4 \
+\cb6   \}\cb1 \
+\cb6 \});\cb1 \
+\pard\pardeftab720\sl280\partightenfactor0
+
+\f5\b \cf4 \outl0\strokewidth0 \
+\pard\pardeftab720\sl280\partightenfactor0
+
+\f2\b0 \cf0 \kerning1\expnd0\expndtw0 \
+The response will contain the new added whatever it is in response.data.\
+\
+
+\f0\b Adding an error handler to a promise chain\
+
+\f2\b0 blogHandler.getAll().then(blogs=> stuff).catch(error=> console.log(error));
+\f0\b \
+
+\f2\b0 \
+
+\f0\b Replacing a changed member of an array \
+\pard\pardeftab720\sl280\partightenfactor0
+
+\f1\b0 \cf3 \expnd0\expndtw0\kerning0
+updatedArray = notes.map(note => note.id === newNoteId ? newNote : note)
+\f2 \cf0 \kerning1\expnd0\expndtw0 \
+\
+\pard\pardeftab720\sl280\partightenfactor0
+
+\f0\b \cf0 Saving an api key in process.env
+\f2\b0 \
+Make an .env file and put your api key in it \
+\pard\pardeftab720\sl280\partightenfactor0
+
+\f1 \cf3 \expnd0\expndtw0\kerning0
+REACT_APP_API_KEY='t0p53cr3t4p1k3yv4lu3'\cf4 \
+\pard\pardeftab720\sl280\partightenfactor0
+
+\f2 \cf0 \kerning1\expnd0\expndtw0 \
+You can get the key in your code with 
+\f1 \cf3 \expnd0\expndtw0\kerning0
+process.env.REACT_APP_API_KEY\cf4 \
+
+\f2 \cf0 \kerning1\expnd0\expndtw0 \
+Make sure you have a .gitignore file with .env (and node_modules for that matter)\
+\
+
+\f0\b Timed error message \
+
+\f2\b0 Make a message component that receives a message as props, returns null if message is null and the component if otherwise\
+\
+Store message in state in a parent component. Then have a function for displaying message, and a timeout for resetting the message to null. \
+\pard\pardeftab720\sl280\partightenfactor0
+
+\f1 \cf4 \expnd0\expndtw0\kerning0
+ setMessage(`This is my message`)\
+setTimeout(() => \{setErrorMessage(null)\}, 5000)\
+\pard\pardeftab720\sl280\partightenfactor0
+
+\f2 \cf0 \kerning1\expnd0\expndtw0 \
+Put message component in appropriate spot inside render so it will pop up as needed.\
+\
+\pard\pardeftab720\sl280\partightenfactor0
+
+\f0\b\fs36 \cf0 \cb20 Part 3\
+\pard\pardeftab720\sl280\partightenfactor0
+
+\f2\b0\fs24 \cf0 \cb1 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 Implementing the backend! Node!\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 \ul \ulc0 https://fullstackopen.com/en/part3/node_js_and_express\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 \ulnone Go to the appropriate directory, type
+\f6  \cf21 npm init\cf4 , and answer ?s
+\f2 \cf0 \
+Make sure main is index.js. not much else is important\
+Open resulting package.json and add 
+\f6 \cf22 \expnd0\expndtw0\kerning0
+"start": "node index.js"
+\f2 \cf4  to scripts. \
+Make an index.js file\
+Install express (
+\f6 \cf22 npm install express
+\f2 \cf4 )\
+\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\b \cf4 Importing in Node\
+
+\f2\b0 const whathaveyou = require(\'93thing\'94);\
+\
+
+\f0\b Express 
+\f2\b0 is the less cumbersome way to make a web server in Node than the built-in http kind. It can guess the right status code and the content type so you don\'92t have to specify, and it will change things into JSON format for you if you call response.json\
+\
+\ul https://fullstackopen.com/en/part3/node_js_and_express#web-and-express\
+\ulnone Basic app is \
+\pard\pardeftab720\sl280\partightenfactor0
+
+\f6 \cf22 const express = require('express')\
+const app = express()\
+\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f2 \cf4 App needs to use express.json() middleware to parse JSON data coming from incoming requests. \
+\'93
+\f4 The json-parser functions so that it takes the JSON data of a request, transforms it into a JavaScript object and then attaches it to the 
+\f7\i body
+\f4\i0  property of the 
+\f7\i request
+\f4\i0  object before the route handler is called.\'94\
+
+\f2 So incoming JSON data gets turned into a \{name: \'93Satsuki\'94, color: \'93black\'94\} object living inside request.body. So you can get name from request.body.name, for example.\
+\pard\pardeftab720\sl280\partightenfactor0
+
+\f1 \cf3 app.use(express.json())\
+\pard\pardeftab720\sl280\partightenfactor0
+
+\f6 \cf22 \
+\pard\pardeftab720\sl280\partightenfactor0
+
+\f0\b \cf4 Controllers
+\f2\b0 \
+Then, various responses to .get and .post and whatever, \
+\pard\pardeftab720\sl280\partightenfactor0
+
+\f1 \cf3 app.get('/', (request, response, next) => \{\
+  
+\f3 \cf19 \cb6 response\cf4 .\cf17 status\cf4 (\cf23 201\cf4 ).\cf17 json\cf4 (\cf15 populatedBlog\cf4 );
+\f1 \cf3 \cb1 \
+\})\
+\pard\pardeftab720\sl280\partightenfactor0
+
+\f2 \cf4 \
+Usually it\'92ll be response.json(some data), unless you need to specify something other than 200 OK.\
+Express sends 200 OK as a default, and can automatically send some error codes too\
+If you want to just send a # response, do response.status(200).end()\
+End is \'93
+\f4 Used to quickly end the response without any data\'94\
+\
+
+\f2 Put in error handling:\
+\pard\pardeftab720\sl280\partightenfactor0
+
+\f1 \cf3     .catch(error => next(error))\cf4 \
+\pard\pardeftab720\sl280\partightenfactor0
+
+\f2 \cf4 and add next to (request, response, next) if you haven\'92t yet.\
+Of course you\'92ll need an error handler to do anything with that next\
+\
+\pard\pardeftab720\sl280\partightenfactor0
+
+\f0\b \cf4 Getting a parameter out of a route
+\f2\b0 \
+\pard\pardeftab720\sl280\partightenfactor0
+
+\f1 \cf3 app.get('/api/notes/:id', (request, response) => \{\
+  const id = request.params.id\
+\'85.
+\f2 \cf4 \
+\
+\pard\pardeftab720\sl280\partightenfactor0
+
+\f0\b \cf4 Statuses
+\f2\b0 \
+200 OK \
+201 Created: good response for after POST/PUT request\
+204 No content: a nice response for successful DELETE request\
+400 Bad request: for incomplete/wrong request. Like you need a \{title: \'93Blah\'94 author: \'93Blah\'94\} but there\'92s no author or something. Too short password. Etc.\
+401 Unauthorized: we needed a token but the token\'92s messed up\
+404 Not found: unknown endpoint\
+418 I\'92m a teapot: I don\'92t make coffee\
+\
+
+\f0\b Listening to port
+\f2\b0 \
+then define the port and ask app to listen to that port.\
+\pard\pardeftab720\sl360\partightenfactor0
+
+\f3 \cf4 \outl0\strokewidth0 \strokec4 \
+\cf9 \cb6 \strokec9 const\cf4 \strokec4  \cf10 \strokec10 PORT\cf4 \strokec4  = \cf8 \strokec8 3001\cf4 \cb1 \strokec4 \
+\cf5 \cb6 \strokec5 app\cf4 \strokec4 .\cf11 \strokec11 listen\cf4 \strokec4 (\cf10 \strokec10 PORT\cf4 \strokec4 , () \cf9 \strokec9 =>\cf4 \strokec4  \{\cb1 \
+\cb6   \cf5 \strokec5 console\cf4 \strokec4 .\cf11 \strokec11 log\cf4 \strokec4 (\cf7 \strokec7 `Server running on port \cf9 \strokec9 $\{\cf10 \strokec10 PORT\cf9 \strokec9 \}\cf7 \strokec7 `\cf4 \strokec4 )\cb1 \
+\cb6 \})\cb1 \
+\pard\pardeftab720\sl280\partightenfactor0
+
+\f6 \cf21 \outl0\strokewidth0 \
+\pard\pardeftab720\sl280\partightenfactor0
+
+\f2 \cf4 Eventually these will be split out into controllers for .get .post etc, listening at PORT will be in index.js
+\f1 \cf21 \
+\pard\pardeftab720\sl280\partightenfactor0
+\cf4 \
+\pard\pardeftab720\sl280\partightenfactor0
+
+\f2 \cf4 Set up 
+\f0\b nodemon 
+\f2\b0 as a development dependency so you don\'92t have to constantly restart the application to see changes\
+\pard\pardeftab720\sl280\partightenfactor0
+
+\f6 \cf21 npm install --save-dev nodemon\cf4 \
+\pard\pardeftab720\sl280\partightenfactor0
+
+\f2 \cf4 \
+Add 
+\f6 \cf22 "dev": "nodemon index.js
+\f1 " 
+\f2 \cf4 to scripts so you can start your app with nonodemon with \
+\pard\pardeftab720\sl280\partightenfactor0
+
+\f8\b \cf22 npm run dev\
+
+\f5 \
+\pard\pardeftab720\sl280\partightenfactor0
+
+\f0 \cf4 Testing one: using Postman and the Visual Studio Code REST client\
+\pard\pardeftab720\sl280\partightenfactor0
+
+\f2\b0 \cf4 These are both used to make test requests, and we prefer VS Code. Put requests in a requests folder, inside a rest file. all_requests.rest\
+\
+Separate with a ###, then the name of method, then URL, content type, a new line, the data you\'92re sending. \
+\
+\pard\pardeftab720\sl360\partightenfactor0
+
+\f3 \cf4 \cb6 \outl0\strokewidth0 \strokec4 ###\cb1 \
+\cf10 \cb6 \strokec10 POST\cf4 \strokec4  http:\cf24 \strokec24 //localhost:3003/api/blogs\cf4 \cb1 \strokec4 \
+\cf5 \cb6 \strokec5 Content\cf4 \strokec4 -Type: \cf5 \strokec5 application\cf4 \strokec4 /\cf5 \strokec5 json\cf4 \cb1 \strokec4 \
+\
+\cb6 \{\cb1 \
+\cb6     \cf7 \strokec7 "title"\cf4 \strokec4 : \cf7 \strokec7 "Budget Bytes"\cf4 \strokec4 ,\cb1 \
+\cb6     \cf7 \strokec7 "author"\cf4 \strokec4 : \cf7 \strokec7 "Beth"\cf4 \strokec4 ,\cb1 \
+\cb6     \cf7 \strokec7 "url"\cf4 \strokec4 : \cf7 \strokec7 "https://www.budgetbytes.com/"\cf4 \strokec4 ,\cb1 \
+\cb6     \cf7 \strokec7 "likes"\cf4 \strokec4 : \cf8 \strokec8 5\cf4 \cb1 \strokec4 \
+\cb6 \}\cb1 \
+\pard\pardeftab720\sl280\partightenfactor0
+
+\f5\b \cf22 \outl0\strokewidth0 \
+\
+\pard\pardeftab720\sl280\partightenfactor0
+
+\f0 \cf4 MIddleware\
+\pard\pardeftab720\sl280\partightenfactor0
+
+\f2\b0 \cf4 Put middleware inside a utils folder.\
+Other middleware besides express.json needs to go after it somewhere, otherwise we won\'92t get content of request parsed out of JSON.\
+You use middleware by importing it, then calling app.use(middlewareName);\
+Some middleware functions will go before the routes are called: the logger, and the token extractor if we have one.\
+Some middleware will come after routes: the unknown endpoint handler, and the error handler. Error handler has to be last.\
+\
+\pard\pardeftab720\sl280\partightenfactor0
+
+\f0\b \cf4 Connecting front end to back end locally, and being thwarted by CORS
+\f5 \cf22 \
+\pard\pardeftab720\sl280\partightenfactor0
+
+\f2\b0 \cf4 Install cors\
+\pard\pardeftab720\sl280\partightenfactor0
+
+\f1 \cf3 npm install cors\
+\pard\pardeftab720\sl280\partightenfactor0
+
+\f5\b \cf3 \
+\pard\pardeftab720\sl360\partightenfactor0
+
+\f3\b0 \cf9 \cb6 \outl0\strokewidth0 \strokec9 const\cf4 \strokec4  \cf11 \strokec11 cors\cf4 \strokec4  = \cf11 \strokec11 require\cf4 \strokec4 (\cf7 \strokec7 'cors'\cf4 \strokec4 )\cb1 \
+\cf5 \cb6 \strokec5 app\cf4 \strokec4 .\cf11 \strokec11 use\cf4 \strokec4 (\cf11 \strokec11 cors\cf4 \strokec4 ())\cb1 \
+\pard\pardeftab720\sl280\partightenfactor0
+
+\f1 \cf4 \outl0\strokewidth0 \
+\pard\pardeftab720\sl280\partightenfactor0
+
+\f2 \cf4 Cors middleware goes before express.json
+\f5\b \cf22 \
+\
+\pard\pardeftab720\sl280\partightenfactor0
+
+\f0 \cf4 Deploying to Heroku\
+\pard\pardeftab720\sl280\partightenfactor0
+
+\f4\b0 \cf4 Add a file called 
+\f7\i Procfile
+\f4\i0  to the project's root to tell Heroku how to start the application. \
+\pard\pardeftab720\sl280\partightenfactor0
+
+\f1 \cf3 web: npm start\cf4 \
+\pard\pardeftab720\sl280\partightenfactor0
+
+\f2 \cf4 Change port to 
+\f1 process.env.PORT || 3001 
+\f2 so it\'92s either default 3001 locally, or whatever process.env.PORT set inside Heroku. 
+\f1 \
+
+\f2 Make a .gitignore file in the root folder that ignores node_modules\
+\pard\pardeftab720\sl280\partightenfactor0
+
+\f4 \cf4 Create a Heroku application with the command 
+\f1 \cf3 heroku create
+\f4 \cf4 , commit your code to the repository and move it to Heroku with command 
+\f7\i git push heroku main
+\f4\i0 .
+\f2  
+\f5\b \cf22 \
+\pard\pardeftab720\sl280\partightenfactor0
+
+\f2\b0 \cf4 You can access continual heroku logs with 
+\f9\i \cf3 h
+\f1\i0 eroku logs -t
+\f5\b \cf22 \
+\
+\pard\pardeftab720\sl280\partightenfactor0
+
+\f0 \cf4 If you want to host front and backend in the same spot\
+\pard\pardeftab720\sl280\partightenfactor0
+
+\f2\b0 \cf4 See here (part 3b, serving static files from the backend):
+\f0\b \
+
+\f2\b0 https://fullstackopen.com/en/part3/deploying_app_to_internet#serving-static-files-from-the-backend\
+Change urls to backend to relative urls, run a build, copy build folder to backend, and use express static middleware \
+\pard\pardeftab720\sl280\partightenfactor0
+
+\f1 \cf3 app.use(express.static('build'))\
+\pard\pardeftab720\sl280\partightenfactor0
+
+\f2 \cf4 There are a bunch of scripts to simplify updating the frontend on Heroku, and how to still connect to local server in dev move despite relative URLs. See link.
+\f1 \cf22 \
+\pard\pardeftab720\sl280\partightenfactor0
+
+\f5\b \cf22 \
+\pard\pardeftab720\sl280\partightenfactor0
+
+\f0 \cf4 MongoDB
+\f5 \cf22 \
+\pard\pardeftab720\sl280\partightenfactor0
+
+\f2\b0 \cf4 \ul \ulc4 https://fullstackopen.com/en/part3/saving_data_to_mongo_db#backend-connected-to-a-database
+\f5\b \cf22 \ulc22 \
+\pard\pardeftab720\sl280\partightenfactor0
+
+\f2\b0 \cf4 \ulnone Create a cluster. Choose AWS and one of the free regions.\
+When it\'92s ready, go into database access and set a username and password with privileges. Whitelist all IP addresses (not that it\'92ll do you much good)\
+Click connect. MongoDB will give you some bullshit connection string that won\'92t work. Use the slightly older one.\
+\
+
+\f0\b Mongoose\
+
+\f2\b0 We will use Mongoose to talk with MongoDB. Install mongoose. \
+\
+inside App \
+\pard\pardeftab720\sl360\partightenfactor0
+
+\f3 \cf9 \cb6 const\cf4  \cf25 mongoose\cf4  = \cf17 require\cf4 (\cf16 "mongoose"\cf4 );\
+\cf9 const\cf4  \cf15 config\cf4  = \cf17 require\cf4 (\cf16 "./utils/config"\cf4 );\cb1 \
+\
+\cf9 \cb6 const\cf4  \cf15 mongoUrl\cf4  = \cf19 config\cf4 .\cf19 MONGODB_URI\cf4 ;\cb1 \
+\
+\cf25 \cb6 mongoose\cf4 \cb1 \
+\cb6   .\cf17 connect\cf4 (\cf15 mongoUrl\cf4 , \{\cb1 \
+\cb6     \cf19 useNewUrlParser:\cf4  \cf9 true\cf4 ,\cb1 \
+\cb6     \cf19 useUnifiedTopology:\cf4  \cf9 true\cf4 ,\cb1 \
+\cb6     \cf19 useFindAndModify:\cf4  \cf9 false\cf4 ,\cb1 \
+\cb6     \cf19 useCreateIndex:\cf4  \cf9 true\cf4 ,\cb1 \
+\cb6   \})\cb1 \
+\cb6   .\cf17 then\cf4 (() \cf9 =>\cf4  \{\cb1 \
+\cb6     \cf19 logger\cf4 .\cf17 info\cf4 (\cf16 "Successfully connected to the database"\cf4 );\cb1 \
+\cb6   \})\cb1 \
+\cb6   .\cf17 catch\cf4 ((\cf19 err\cf4 ) \cf9 =>\cf4  \{\cb1 \
+\cb6     \cf19 logger\cf4 .\cf17 info\cf4 (\cf16 "Didn't connect to database and here's the error"\cf4 , \cf19 err\cf4 );\cb1 \
+\cb6   \});\cb1 \
+\pard\pardeftab720\sl280\partightenfactor0
+
+\f2 \cf4 \
+The connect URL and PORT lives insides a .env file, accessed by config inside the utils folder. Config needs dotenv to access the .env file\
+Gitinore the .env file or else!!1\
+\
+Inside config\
+\
+\pard\pardeftab720\sl360\partightenfactor0
+
+\f3 \cf17 \cb6 require\cf4 (\cf16 "dotenv"\cf4 ).\cf17 config\cf4 ();\cb1 \
+\
+\cf9 \cb6 let\cf4  \cf19 MONGODB_URI\cf4  = \cf19 process\cf4 .\cf19 env\cf4 .\cf15 MONGODB_URI\cf4 ;\cb1 \
+\pard\pardeftab720\sl360\partightenfactor0
+\cf18 \cb6 if\cf4  (\cf19 process\cf4 .\cf19 env\cf4 .\cf15 NODE_ENV\cf4  === \cf16 "test"\cf4 ) \{\cb1 \
+\pard\pardeftab720\sl360\partightenfactor0
+\cf4 \cb6   \cf19 MONGODB_URI\cf4  = \cf19 process\cf4 .\cf19 env\cf4 .\cf15 MONGODB_URI_TEST\cf4 ;\cb1 \
+\cb6 \}\cb1 \
+\cf9 \cb6 const\cf4  \cf15 PORT\cf4  = \cf23 3001\cf4 ;\cb1 \
+\
+\cf25 \cb6 module\cf4 .\cf25 exports\cf4  = \{ \cf19 MONGODB_URI\cf4 , \cf19 PORT\cf4  \};\cb1 \
+\
+\pard\pardeftab720\sl280\partightenfactor0
+
+\f8\b \cf4 Making schemas\
+
+\f6\b0 We need to define the shape of the documents within each collection (a Schema), and then make a constructor for making new ones (a model)\
+Make a models folder and define each in a lower case, singular file\
+blog.js\
+Name of schema: blogSchema\
+Name of model
+\f8\b : 
+\f6\b0 Blog\
+Name of collection up on MondoDB (automatic): blogs\
+\
+A simple schema \
+\
+\pard\pardeftab720\sl360\partightenfactor0
+
+\f3 \cf9 \cb6 const\cf4  \cf25 mongoose\cf4  = \cf17 require\cf4 (\cf16 "mongoose"\cf4 );\cb1 \
+\pard\pardeftab720\sl280\partightenfactor0
+
+\f6 \cf4 \
+\pard\pardeftab720\sl360\partightenfactor0
+
+\f3 \cf9 \cb6 const\cf4  \cf15 blogSchema\cf4  = \cf9 new\cf4  \cf25 mongoose\cf4 .\cf25 Schema\cf4 (\{\cb1 \
+\cb6   \cf19 title:\cf4  String,\cb1 \
+\cb6   \cf25 likes\cf19 :\cf4  \cf25 Number\cf4 \cb1 \
+\cb6 \});\
+\
+\cf15 blogSchema\cf4 .\cf17 set\cf4 (\cf16 "toJSON"\cf4 , \{\cb1 \
+\cb6   \cf17 transform\cf19 :\cf4  (\cf19 document\cf4 , \cf19 returnedObject\cf4 ) \cf9 =>\cf4  \{\cb1 \
+\cb6     \cf19 returnedObject\cf4 .\cf19 id\cf4  = \cf19 returnedObject\cf4 .\cf19 _id\cf4 .\cf17 toString\cf4 ();\cb1 \
+\cb6     \cf9 delete\cf4  \cf19 returnedObject\cf4 .\cf19 _id\cf4 ;\cb1 \
+\cb6     \cf9 delete\cf4  \cf19 returnedObject\cf4 .\cf19 __v\cf4 ;\cb1 \
+\cb6   \},\cb1 \
+\cb6 \});\cb1 \
+\
+\cf25 \cb6 module\cf4 .\cf25 exports\cf4  = \cf25 mongoose\cf4 .\cf17 model\cf4 (\cf16 "Blog"\cf4 , \cf15 blogSchema\cf4 );\cb1 \
+\
+\pard\pardeftab720\sl360\partightenfactor0
+
+\f6 \cf4 \cb6 Setting toJSON means we can edit what gets passed back. We can delete private _id and _v and change _id from its original object to a string.\
+\pard\pardeftab720\sl360\partightenfactor0
+
+\f3 \cf4 \
+\pard\pardeftab720\sl280\partightenfactor0
+
+\f8\b \cf4 \cb1 Working with MongoDB inside controllers\
+
+\f6\b0 Import the models you need and use commands like findOne, findById, .save(), use the constructor as needed to make new mongo objects.\
+These commands are async so you\'92ll need to for example, make that controller async and use await.\
+\pard\pardeftab720\sl360\partightenfactor0
+
+\f3 \cf9 \cb6 const\cf4  \cf15 user\cf4  = \cf18 await\cf4  \cf19 User\cf4 .\cf17 findById\cf4 (\cf15 decodedToken\cf4 .\cf19 id\cf4 );\cb1 \
+\pard\pardeftab720\sl280\partightenfactor0
+
+\f6 \cf4 findByIdAndUpdate usually returns the original document, so set it to return changed document if that\'92s what you need. \
+
+\f1 \cf26 \outl0\strokewidth0 \strokec4 Note.findByIdAndUpdate(request.params.id, note, \{ new: true \})\
+
+\f6 \cf4 \outl0\strokewidth0 The id, the new document, the new setting.\
+\
+
+\f8\b Setting environment variables in Heroku\
+
+\f6\b0 Either use the command line \
+\pard\pardeftab720\sl280\partightenfactor0
+
+\f1 \cf26 \outl0\strokewidth0 \strokec4 heroku config:set MONGODB_URI=mongodb+srv://fullstack:secretpasswordhere@cluster0-ostce.mongodb.net/note-app?retryWrites=true\
+\pard\pardeftab720\sl280\partightenfactor0
+
+\f6 \cf4 \outl0\strokewidth0 or set it inside Heroku dashboard in browser. Settings => config variables.\
+\pard\pardeftab720\sl280\partightenfactor0
+
+\f8\b \cf4 \
+\pard\pardeftab720\sl280\partightenfactor0
+
+\f0\fs36 \cf4 \cb27 \kerning1\expnd0\expndtw0 Part 4\
+\pard\pardeftab720\sl280\partightenfactor0
+
+\f8\fs24 \cf4 \cb1 \expnd0\expndtw0\kerning0
+\
+Testing Node applications!
+\f6\b0 \
+\pard\pardeftab720\sl280\partightenfactor0
+
+\f1 \cf26 \outl0\strokewidth0 \strokec4 npm install --save-dev jest\
+\
+\pard\pardeftab720\sl280\partightenfactor0
+
+\f6 \cf4 \outl0\strokewidth0 add script:\
+\pard\pardeftab720\sl280\partightenfactor0
+
+\f1 \cf26 \outl0\strokewidth0 \strokec4   "test": "jest --verbose"\
+\pard\pardeftab720\sl280\partightenfactor0
+
+\f3 \cf4 \outl0\strokewidth0 \
+Then either add \
+\pard\pardeftab720\sl280\partightenfactor0
+
+\f1 \cf26 \outl0\strokewidth0 \strokec4 "jest": \{\
+   "testEnvironment": "node"\
+ \}\
+\pard\pardeftab720\sl280\partightenfactor0
+
+\f6 \cf4 \outl0\strokewidth0 to the end of package.json, or make a new file 
+\f7\i \cf4 \outl0\strokewidth0 \strokec4 jest.config.js
+\f6\i0 \cf4 \outl0\strokewidth0  containing this:\
+\pard\pardeftab720\sl360\partightenfactor0
+
+\f3 \cf10 \cb6 \outl0\strokewidth0 \strokec10 module\cf4 \strokec4 .\cf10 \strokec10 exports\cf4 \strokec4  = \{\cb1 \
+\cb6   \cf5 \strokec5 testEnvironment:\cf4 \strokec4  \cf7 \strokec7 'node'\cf4 \strokec4 ,\cb1 \
+\cb6 \};\cb1 \
+\pard\pardeftab720\sl280\partightenfactor0
+
+\f1 \cf26 \
+\pard\pardeftab720\sl280\partightenfactor0
+
+\f6 \cf4 \outl0\strokewidth0 Make a tests directory and name your tests testname.test.js\
+\
+The test:\
+import your function\
+\pard\pardeftab720\sl280\partightenfactor0
+
+\f1 \cf26 \outl0\strokewidth0 \strokec4 const palindrome = require('../utils/for_testing').palindrome\
+\pard\pardeftab720\sl280\partightenfactor0
+
+\f6 \cf4 \outl0\strokewidth0 The thing inside parans is relative path to file, for_testing is file name, .palindrome is name of the function\
+\
+two tests inside a describe block, with import
+\f1 \cf4 \outl0\strokewidth0 \strokec4 \
+\pard\pardeftab720\sl280\partightenfactor0
+
+\f6 \cf26 \outl0\strokewidth0 \
+\pard\pardeftab720\sl360\partightenfactor0
+
+\f3 \cf9 \cb6 \outl0\strokewidth0 \strokec9 const\cf4 \strokec4  \cf11 \strokec11 average\cf4 \strokec4  = \cf11 \strokec11 require\cf4 \strokec4 (\cf7 \strokec7 '../utils/for_testing'\cf4 \strokec4 ).\cf11 \strokec11 average\cf4 \cb1 \strokec4 \
+\
+\cf11 \cb6 \strokec11 describe\cf4 \strokec4 (\cf7 \strokec7 'average'\cf4 \strokec4 , () \cf9 \strokec9 =>\cf4 \strokec4  \{\cb1 \
+\cb6   \cf11 \strokec11 test\cf4 \strokec4 (\cf7 \strokec7 'of one value is the value itself'\cf4 \strokec4 , () \cf9 \strokec9 =>\cf4 \strokec4  \{\cb1 \
+\cb6     \cf11 \strokec11 expect\cf4 \strokec4 (\cf11 \strokec11 average\cf4 \strokec4 ([\cf8 \strokec8 1\cf4 \strokec4 ])).\cf11 \strokec11 toBe\cf4 \strokec4 (\cf8 \strokec8 1\cf4 \strokec4 )\cb1 \
+\cb6   \})\cb1 \
+\
+\cb6   \cf11 \strokec11 test\cf4 \strokec4 (\cf7 \strokec7 'of many is calculated right'\cf4 \strokec4 , () \cf9 \strokec9 =>\cf4 \strokec4  \{\cb1 \
+\cb6     \cf11 \strokec11 expect\cf4 \strokec4 (\cf11 \strokec11 average\cf4 \strokec4 ([\cf8 \strokec8 1\cf4 \strokec4 , \cf8 \strokec8 2\cf4 \strokec4 , \cf8 \strokec8 3\cf4 \strokec4 , \cf8 \strokec8 4\cf4 \strokec4 , \cf8 \strokec8 5\cf4 \strokec4 , \cf8 \strokec8 6\cf4 \strokec4 ])).\cf11 \strokec11 toBe\cf4 \strokec4 (\cf8 \strokec8 3.5\cf4 \strokec4 )\cb1 \
+\cb6   \})\cb1 \
+\
+\cb6 \})
+\f1 \cb1 \
+\pard\pardeftab720\sl280\partightenfactor0
+\cf4 \
+\
+\pard\pardeftab720\sl280\partightenfactor0
+
+\f6 \cf4 \outl0\strokewidth0 Run npm test (script added above) to do all, or run a single test with only method (describe.only or test.only) \
+Or, use this to run a single test or block 
+\f1 \cf26 \outl0\strokewidth0 \strokec4 npm test -- -t 'when list has only one blog, equals the likes of that'\cf4 \
+
+\f6 \cf4 \outl0\strokewidth0 You can just type part of the name and that\'92ll run whatever contains that fragment
+\f1 \cf4 \outl0\strokewidth0 \strokec4 \
+\
+\pard\pardeftab720\sl280\partightenfactor0
+
+\f8\b \cf4 \outl0\strokewidth0 Testing the backend app with a fake API (\'93integration tests\'94)\
+\pard\pardeftab720\sl280\partightenfactor0
+
+\f6\b0 \cf4 We need to change so that app runs on either production or development mode, with a corresponding change to which database we access in MongoDB\
+\
+Add scripts\
+\pard\pardeftab720\sl280\partightenfactor0
+
+\f1 \cf26 \outl0\strokewidth0 \strokec4 "start": "NODE_ENV=production node index.js",    \
+"dev": "NODE_ENV=development nodemon index.js",\cf4 \
+\pard\pardeftab720\sl280\partightenfactor0
+
+\f6 \cf4 \outl0\strokewidth0 add/replace script:\
+\pard\pardeftab720\sl280\partightenfactor0
+
+\f1 \cf26 \outl0\strokewidth0 \strokec4 "test": "NODE_ENV=test jest --verbose --runInBand"\
+\
+\pard\pardeftab720\sl280\partightenfactor0
+
+\f6 \cf4 \outl0\strokewidth0 Add to config file
+\f1 \cf26 \outl0\strokewidth0 \strokec4 \
+\pard\pardeftab720\sl280\partightenfactor0
+\cf26 const MONGODB_URI = process.env.NODE_ENV === 'test' ? process.env.TEST_MONGODB_URI  : process.env.MONGODB_URI\
+\
+\pard\pardeftab720\sl280\partightenfactor0
+
+\f6 \cf4 \outl0\strokewidth0 Add URL to test mongo db in .env file (remember new databases just appear when you change the name part inside URL)\
+\
+Install supertest\
+\pard\pardeftab720\sl280\partightenfactor0
+
+\f1 \cf26 \outl0\strokewidth0 \strokec4 npm install --save-dev supertest\
+\
+\pard\pardeftab720\sl280\partightenfactor0
+
+\f6 \cf4 \outl0\strokewidth0 Imports and stuff
+\f1 \cf26 \outl0\strokewidth0 \strokec4 \
+\pard\pardeftab720\sl360\partightenfactor0
+
+\f3 \cf9 \cb6 \strokec9 const\cf4 \strokec4  \cf28 \strokec28 mongoose\cf4 \strokec4  = \cf11 \strokec11 require\cf4 \strokec4 (\cf7 \strokec7 'mongoose'\cf4 \strokec4 )\cb1 \
+\cf9 \cb6 \strokec9 const\cf4 \strokec4  \cf11 \strokec11 supertest\cf4 \strokec4  = \cf11 \strokec11 require\cf4 \strokec4 (\cf7 \strokec7 'supertest'\cf4 \strokec4 )\cb1 \
+\cf9 \cb6 \strokec9 const\cf4 \strokec4  \cf10 \strokec10 app\cf4 \strokec4  = \cf11 \strokec11 require\cf4 \strokec4 (\cf7 \strokec7 '../app'\cf4 \strokec4 )\cb1 \
+\cf9 \cb6 \strokec9 const\cf4 \strokec4  \cf10 \strokec10 Blog\cf4 \strokec4  = \cf11 \strokec11 require\cf4 \strokec4 (\cf7 \strokec7 "../models/blog"\cf4 \strokec4 )\cb1 \
+\
+\cf9 \cb6 \strokec9 const\cf4 \strokec4  \cf10 \strokec10 api\cf4 \strokec4  = \cf11 \strokec11 supertest\cf4 \strokec4 (\cf10 \strokec10 app\cf4 \strokec4 )\cb1 \
+\pard\pardeftab720\sl280\partightenfactor0
+
+\f1 \cf26 \
+\pard\pardeftab720\sl280\partightenfactor0
+
+\f6 \cf4 \outl0\strokewidth0 A sample test with before each and close connection at the end. testHelper.blogs is a list of objects that was imported. The Blog model (the constructor) also need to be imported.\
+\pard\pardeftab720\sl360\partightenfactor0
+
+\f3 \cf11 \cb6 \outl0\strokewidth0 \strokec11 beforeEach\cf4 \strokec4 (\cf9 \strokec9 async\cf4 \strokec4  () \cf9 \strokec9 =>\cf4 \strokec4  \{\cb1 \
+\cb6   \cf13 \strokec13 await\cf4 \strokec4  \cf5 \strokec5 Blog\cf4 \strokec4 .\cf11 \strokec11 deleteMany\cf4 \strokec4 (\{\});\cb1 \
+\cb6   \cf9 \strokec9 const\cf4 \strokec4  \cf10 \strokec10 blogObjects\cf4 \strokec4  = \cf5 \strokec5 testHelper\cf4 \strokec4 .\cf10 \strokec10 blogs\cf4 \strokec4 .\cf11 \strokec11 map\cf4 \strokec4 ((\cf5 \strokec5 blog\cf4 \strokec4 ) \cf9 \strokec9 =>\cf4 \strokec4  \cf9 \strokec9 new\cf4 \strokec4  \cf11 \strokec11 Blog\cf4 \strokec4 (\cf5 \strokec5 blog\cf4 \strokec4 ));\cb1 \
+\cb6   \cf9 \strokec9 const\cf4 \strokec4  \cf10 \strokec10 promises\cf4 \strokec4  = \cf10 \strokec10 blogObjects\cf4 \strokec4 .\cf11 \strokec11 map\cf4 \strokec4 ((\cf5 \strokec5 blogObject\cf4 \strokec4 ) \cf9 \strokec9 =>\cf4 \strokec4  \cf5 \strokec5 blogObject\cf4 \strokec4 .\cf11 \strokec11 save\cf4 \strokec4 ());\cb1 \
+\cb6   \cf13 \strokec13 await\cf4 \strokec4  \cf28 \strokec28 Promise\cf4 \strokec4 .\cf11 \strokec11 all\cf4 \strokec4 (\cf10 \strokec10 promises\cf4 \strokec4 );\cb1 \
+\cb6 \});
+\f1 \cf26 \cb1 \
+\pard\pardeftab720\sl280\partightenfactor0
+\cf26 \
+\pard\pardeftab720\sl360\partightenfactor0
+
+\f3 \cf11 \cb6 \strokec11 test\cf4 \strokec4 (\cf7 \strokec7 "Successfully gets correct number of blogs"\cf4 \strokec4 , \cf9 \strokec9 async\cf4 \strokec4  () \cf9 \strokec9 =>\cf4 \strokec4  \{\cb1 \
+\pard\pardeftab720\sl360\partightenfactor0
+\cf4 \cb6   \cf9 \strokec9 const\cf4 \strokec4  \cf10 \strokec10 response\cf4 \strokec4  = \cf13 \strokec13 await\cf4 \strokec4  \cf10 \strokec10 api\cf4 \strokec4 .\cf11 \strokec11 get\cf4 \strokec4 (\cf7 \strokec7 "/api/blogs"\cf4 \strokec4 ).\cf11 \strokec11 expect\cf4 \strokec4 (\cf8 \strokec8 200\cf4 \strokec4 );\cb1 \
+\cb6   \cf11 \strokec11 expect\cf4 \strokec4 (\cf10 \strokec10 response\cf4 \strokec4 .\cf5 \strokec5 body\cf4 \strokec4 ).\cf11 \strokec11 toHaveLength\cf4 \strokec4 (\cf5 \strokec5 testHelper\cf4 \strokec4 .\cf10 \strokec10 blogs\cf4 \strokec4 .\cf5 \strokec5 length\cf4 \strokec4 );\cb1 \
+\cb6 \});\
+\
+\pard\pardeftab720\sl360\partightenfactor0
+\cf11 \strokec11 afterAll\cf4 \strokec4 (() \cf9 \strokec9 =>\cf4 \strokec4  \{\cb1 \
+\cb6   \cf28 \strokec28 mongoose\cf4 \strokec4 .\cf10 \strokec10 connection\cf4 \strokec4 .\cf11 \strokec11 close\cf4 \strokec4 ();\cb1 \
+\cb6 \});\cb1 \
+\pard\pardeftab720\sl360\partightenfactor0
+\cf4 \
+\pard\pardeftab720\sl280\partightenfactor0
+
+\f8\b \cf4 \outl0\strokewidth0 Using async/await for controller without try/catch
+\f6\b0 \
+\pard\pardeftab720\sl280\partightenfactor0
+
+\f1 \cf26 \outl0\strokewidth0 \strokec4 npm install express-async-errors\
+\pard\pardeftab720\sl280\partightenfactor0
+
+\f3 \cf4 \
+Put library in app.js\
+\pard\pardeftab720\sl280\partightenfactor0
+
+\f1 \cf26 require('express-async-errors')\
+\pard\pardeftab720\sl280\partightenfactor0
+
+\f3 \cf4 \outl0\strokewidth0 If you do that, you can get rid of next and the try-catch blocks in each router (controllers)\
+\pard\pardeftab720\sl280\partightenfactor0
+
+\f4 \cf4 \outl0\strokewidth0 \strokec4 \'93The library handles everything under the hood. If an exception occurs in a 
+\f7\i async
+\f4\i0  route, the execution is automatically passed to the error handling middleware.\'94\
+\
+\pard\pardeftab720\sl280\partightenfactor0
+
+\f8\b \cf4 \outl0\strokewidth0 References across mongoDB collections
+\f3\b0 \cf4 \outl0\strokewidth0 \strokec4 \
+\
+\pard\pardeftab720\sl360\partightenfactor0
+\cf9 \cb6 \strokec9 const\cf4 \strokec4  \cf10 \strokec10 userSchema\cf4 \strokec4  = \cf9 \strokec9 new\cf4 \strokec4  \cf5 \strokec5 mongoose\cf4 \strokec4 .\cf11 \strokec11 Schema\cf4 \strokec4 (\{\cb1 \
+\cb6   \cf28 \strokec28 username\cf5 \strokec5 :\cf4 \strokec4  \cf28 \strokec28 String\cf4 \strokec4 ,\cb1 \
+\cb6   \cf28 \strokec28 name\cf5 \strokec5 :\cf4 \strokec4  \cf28 \strokec28 String\cf4 \strokec4 ,\cb1 \
+\cb6   \cf28 \strokec28 passwordHash\cf5 \strokec5 :\cf4 \strokec4  \cf28 \strokec28 String\cf4 \strokec4 ,\cb1 \
+\cb6   \cf5 \strokec5 notes:\cf4 \strokec4  [\cb1 \
+\cb6     \{\cb1 \
+\cb6       \cf5 \strokec5 type:\cf4 \strokec4  \cf5 \strokec5 mongoose\cf4 \strokec4 .\cf5 \strokec5 Schema\cf4 \strokec4 .\cf5 \strokec5 Types\cf4 \strokec4 .\cf5 \strokec5 ObjectId\cf4 \strokec4 ,\cb1 \
+\cb6       \cf5 \strokec5 ref:\cf4 \strokec4  \cf7 \strokec7 'Note'\cf4 \cb1 \strokec4 \
+\cb6     \}\cb1 \
+\cb6   ],\cb1 \
+\cb6 \})\cb1 \
+\pard\pardeftab720\sl280\partightenfactor0
+
+\f1 \cf4 \
+\pard\pardeftab720\sl280\partightenfactor0
+
+\f3 \cf4 \outl0\strokewidth0 Add id for notes as needed. When you return, populate the notes (assign 1 to whichever fields you want)\
+Remember, inside MongoDB the id is _id, you call it id and make it a string when you *return* it.\
+\pard\pardeftab720\sl360\partightenfactor0
+\cf9 \cb6 \outl0\strokewidth0 \strokec9 const\cf4 \strokec4  \cf10 \strokec10 users\cf4 \strokec4  = \cf13 \strokec13 await\cf4 \strokec4  \cf5 \strokec5 User\cf4 \strokec4 .\cf11 \strokec11 find\cf4 \strokec4 (\{\}).\cf11 \strokec11 populate\cf4 \strokec4 (\cf7 \strokec7 "notes"\cf4 \strokec4 , \{ \cf5 \strokec5 content:\cf4 \strokec4  \cf8 \strokec8 1\cf4 \strokec4 , \cf5 \strokec5 date:\cf4 \strokec4  \cf8 \strokec8 1\cf4 \strokec4  \});\
+\
+\pard\pardeftab720\sl360\partightenfactor0
+
+\f10\b \cf4 User administration\
+\pard\pardeftab720\sl280\partightenfactor0
+
+\f3\b0 \cf4 \cb1 \outl0\strokewidth0 Never store unencrypted plain text passwords in a database.\
+\pard\pardeftab720\sl280\partightenfactor0
+
+\f1 \cf26 \outl0\strokewidth0 \strokec4 npm install bcrypt\cf4 \
+\pard\pardeftab720\sl280\partightenfactor0
+
+\f3 \cf4 \outl0\strokewidth0 Making a new user: the router\'92s post method will get the password from the body object, encrypt it, and save that.\
+\pard\pardeftab720\sl360\partightenfactor0
+\cf9 \cb6 \outl0\strokewidth0 \strokec9 const\cf4 \strokec4  \cf10 \strokec10 body\cf4 \strokec4  = \cf5 \strokec5 request\cf4 \strokec4 .\cf5 \strokec5 body\cf4 \cb1 \strokec4 \
+\
+\cf9 \cb6 \strokec9 const\cf4 \strokec4  \cf10 \strokec10 saltRounds\cf4 \strokec4  = \cf8 \strokec8 10\cf4 \cb1 \strokec4 \
+\cf9 \cb6 \strokec9 const\cf4 \strokec4  \cf10 \strokec10 passwordHash\cf4 \strokec4  = \cf13 \strokec13 await\cf4 \strokec4  \cf5 \strokec5 bcrypt\cf4 \strokec4 .\cf11 \strokec11 hash\cf4 \strokec4 (\cf10 \strokec10 body\cf4 \strokec4 .\cf5 \strokec5 password\cf4 \strokec4 , \cf10 \strokec10 saltRounds\cf4 \strokec4 )\cb1 \
+\
+\cf9 \cb6 \strokec9 const\cf4 \strokec4  \cf10 \strokec10 user\cf4 \strokec4  = \cf9 \strokec9 new\cf4 \strokec4  \cf11 \strokec11 User\cf4 \strokec4 (\{\cb1 \
+\cb6   \cf5 \strokec5 username:\cf4 \strokec4  \cf10 \strokec10 body\cf4 \strokec4 .\cf5 \strokec5 username\cf4 \strokec4 ,\cb1 \
+\cb6   \cf5 \strokec5 name:\cf4 \strokec4  \cf10 \strokec10 body\cf4 \strokec4 .\cf5 \strokec5 name\cf4 \strokec4 ,\cb1 \
+\cb6   \cf5 \strokec5 passwordHash\cf4 \strokec4 ,\cb1 \
+\cb6 \})
+\f1 \cf26 \cb1 \
+\pard\pardeftab720\sl280\partightenfactor0
+
+\f3 \cf26 \outl0\strokewidth0 \
+\pard\pardeftab720\sl360\partightenfactor0
+
+\f10\b \cf4 \cb6 Validation with MongoDB\
+\pard\pardeftab720\sl280\partightenfactor0
+
+\f3\b0 \cf4 \cb1 Some stuff can be checked with built in validators, but uniqueness (like unique usernames) requires an outside library\
+\pard\pardeftab720\sl360\partightenfactor0
+\cf5 \cb6 \outl0\strokewidth0 \strokec5 npm\cf4 \strokec4  \cf5 \strokec5 install\cf4 \strokec4  \cf5 \strokec5 mongoose\cf4 \strokec4 -\cf5 \strokec5 unique\cf4 \strokec4 -\cf5 \strokec5 validator\cf4 \cb1 \strokec4 \
+\
+\cf9 \cb6 \strokec9 const\cf4 \strokec4  \cf11 \strokec11 uniqueValidator\cf4 \strokec4  = \cf11 \strokec11 require\cf4 \strokec4 (\cf7 \strokec7 'mongoose-unique-validator'\cf4 \strokec4 )\cb1 \
+\cb6 \'85\cb1 \
+\cf9 \cb6 \strokec9 const\cf4 \strokec4  \cf10 \strokec10 userSchema\cf4 \strokec4  = \cf9 \strokec9 new\cf4 \strokec4  \cf5 \strokec5 mongoose\cf4 \strokec4 .\cf11 \strokec11 Schema\cf4 \strokec4 (\{\cb1 \
+\cb6   \cf5 \strokec5 username:\cf4 \strokec4  \{\cb1 \
+\cb6     \cf28 \strokec28 type\cf5 \strokec5 :\cf4 \strokec4  \cf28 \strokec28 String\cf4 \strokec4 ,\cb1 \
+\cb6     \cf5 \strokec5 unique:\cf4 \strokec4  \cf9 \strokec9 true\cf4 \strokec4   \},\cb1 \
+\cb6   \cf28 \strokec28 name\cf5 \strokec5 :\cf4 \strokec4  \cf28 \strokec28 String\cf4 \strokec4 ,\cb1 \
+\cb6   \cf28 \strokec28 passwordHash\cf5 \strokec5 :\cf4 \strokec4  \cf28 \strokec28 String\cf4 \cb1 \strokec4 \
+\cb6 \}\cb1 \
+\
+\cf10 \cb6 \strokec10 userSchema\cf4 \strokec4 .\cf11 \strokec11 plugin\cf4 \strokec4 (\cf11 \strokec11 uniqueValidator\cf4 \strokec4 )\cb1 \
+\pard\pardeftab720\sl280\partightenfactor0
+\cf26 \outl0\strokewidth0 \
+\cf4 required, min/max for numbers, minLength and maxLength for strings etc are built in. unique is not and comes from mongoose-unique-validator\
+\
+\pard\pardeftab720\sl360\partightenfactor0
+
+\f10\b \cf4 \cb6 Token authentication: login\
+\pard\pardeftab720\sl280\partightenfactor0
+
+\f1\b0 \cf26 \cb1 \outl0\strokewidth0 \strokec4 npm install jsonwebtoken\
+\
+\pard\pardeftab720\sl280\partightenfactor0
+
+\f3 \cf4 \outl0\strokewidth0 Inside login controller\
+\pard\pardeftab720\sl280\partightenfactor0
+
+\f1 \cf26 \outl0\strokewidth0 \strokec4 const jwt = require('jsonwebtoken')\
+const bcrypt = require('bcrypt')\
+\
+\'85.\
+\pard\pardeftab720\sl360\partightenfactor0
+
+\f3 \cf9 \cb6 \strokec9 const\cf4 \strokec4  \cf10 \strokec10 user\cf4 \strokec4  = \cf13 \strokec13 await\cf4 \strokec4  \cf5 \strokec5 User\cf4 \strokec4 .\cf11 \strokec11 findOne\cf4 \strokec4 (\{ \cf5 \strokec5 username:\cf4 \strokec4  \cf5 \strokec5 body\cf4 \strokec4 .\cf5 \strokec5 username\cf4 \strokec4  \})\cb1 \
+\cb6   \cf9 \strokec9 const\cf4 \strokec4  \cf10 \strokec10 passwordCorrect\cf4 \strokec4  = \cf10 \strokec10 user\cf4 \strokec4  === \cf9 \strokec9 null\cf4 \strokec4  ? \cf9 \strokec9 false\cf4 \strokec4  : \cf13 \strokec13 await\cf4 \strokec4  \cf5 \strokec5 bcrypt\cf4 \strokec4 .\cf11 \strokec11 compare\cf4 \strokec4 (\cf5 \strokec5 body\cf4 \strokec4 .\cf5 \strokec5 password\cf4 \strokec4 , \cf10 \strokec10 user\cf4 \strokec4 .\cf5 \strokec5 passwordHash\cf4 \strokec4 )\cb1 \
+\
+\cb6   \cf13 \strokec13 if\cf4 \strokec4  (!(\cf10 \strokec10 user\cf4 \strokec4  && \cf10 \strokec10 passwordCorrect\cf4 \strokec4 )) \{\cb1 \
+\cb6     \cf13 \strokec13 return\cf4 \strokec4  \cf5 \strokec5 response\cf4 \strokec4 .\cf11 \strokec11 status\cf4 \strokec4 (\cf8 \strokec8 401\cf4 \strokec4 ).\cf11 \strokec11 json\cf4 \strokec4 (\{\cb1 \
+\cb6       \cf5 \strokec5 error:\cf4 \strokec4  \cf7 \strokec7 'invalid username or password'\cf4 \cb1 \strokec4 \
+\cb6     \})\cb1 \
+\cb6   \}\cb1 \
+\
+\cb6   \cf9 \strokec9 const\cf4 \strokec4  \cf10 \strokec10 userForToken\cf4 \strokec4  = \{\cb1 \
+\cb6     \cf5 \strokec5 username:\cf4 \strokec4  \cf10 \strokec10 user\cf4 \strokec4 .\cf5 \strokec5 username\cf4 \strokec4 ,\cb1 \
+\cb6     \cf5 \strokec5 id:\cf4 \strokec4  \cf10 \strokec10 user\cf4 \strokec4 .\cf5 \strokec5 _id\cf4 \strokec4 ,\cb1 \
+\cb6   \}\cb1 \
+\
+\cb6   \cf9 \strokec9 const\cf4 \strokec4  \cf10 \strokec10 token\cf4 \strokec4  = \cf5 \strokec5 jwt\cf4 \strokec4 .\cf11 \strokec11 sign\cf4 \strokec4 (\cf10 \strokec10 userForToken\cf4 \strokec4 , \cf5 \strokec5 process\cf4 \strokec4 .\cf5 \strokec5 env\cf4 \strokec4 .\cf10 \strokec10 SECRET\cf4 \strokec4 )\
+\
+\pard\pardeftab720\sl280\partightenfactor0
+
+\f10\b \cf4 \cb1 \outl0\strokewidth0 !!!....breaking news....!!!\
+\pard\pardeftab720\sl280\partightenfactor0
+
+\f3\b0 \cf4 The new 2021 version adds a section where the token expires in an hour, also adding another block to errorhandler to handle an expired token\cf4 \cb6 \outl0\strokewidth0 \strokec4 \
+\pard\pardeftab720\sl360\partightenfactor0
+\cf9 \strokec9 const\cf4 \strokec4  \cf10 \strokec10 token\cf4 \strokec4  = \cf5 \strokec5 jwt\cf4 \strokec4 .\cf11 \strokec11 sign\cf4 \strokec4 (    \cb1 \
+\cb6   \cf5 \strokec5 userForToken\cf4 \strokec4 ,     \cb1 \
+\cb6   \cf5 \strokec5 process\cf4 \strokec4 .\cf5 \strokec5 env\cf4 \strokec4 .\cf10 \strokec10 SECRET\cf4 \strokec4 ,    \cb1 \
+\cb6   \{ \cf5 \strokec5 expiresIn:\cf4 \strokec4  \cf8 \strokec8 60\cf4 \strokec4 *\cf8 \strokec8 60\cf4 \strokec4  \}  \cb1 \
+\cb6   )\
+\pard\pardeftab720\sl280\partightenfactor0
+
+\f10\b \cf4 \cb1 \outl0\strokewidth0 !!!....breaking news....!!!
+\f3\b0 \cf4 \outl0\strokewidth0 \strokec4 \
+\pard\pardeftab720\sl360\partightenfactor0
+\cf4 \
+\cb6   \cf5 \strokec5 response\cf4 \cb1 \strokec4 \
+\cb6     .\cf11 \strokec11 status\cf4 \strokec4 (\cf8 \strokec8 200\cf4 \strokec4 )\cb1 \
+\cb6     .\cf11 \strokec11 send\cf4 \strokec4 (\{ \cf5 \strokec5 token\cf4 \strokec4 , \cf5 \strokec5 username:\cf4 \strokec4  \cf10 \strokec10 user\cf4 \strokec4 .\cf5 \strokec5 username\cf4 \strokec4 , \cf5 \strokec5 name:\cf4 \strokec4  \cf10 \strokec10 user\cf4 \strokec4 .\cf5 \strokec5 name\cf4 \strokec4  \})\cb1 \
+\pard\pardeftab720\sl280\partightenfactor0
+
+\f1 \cf4 \
+\pard\pardeftab720\sl280\partightenfactor0
+
+\f3 \cf4 \outl0\strokewidth0 Set the value for SECRET in your process.env file. If the username exists and the password fits passwordHash, jsonwebtoken returns a signed token with process.env.SECRET and whatever info the front end needs to save about user.\
+\
+
+\f10\b Requiring a signed token from the user\'92s end\
+
+\f3\b0 We used Authorization header where the Authorization header has value \
+\pard\pardeftab720\sl280\partightenfactor0
+
+\f1 \cf26 \outl0\strokewidth0 \strokec4 Bearer <~~~the long ass token~~~>\cf4 \
+\
+\
+\pard\pardeftab720\sl280\partightenfactor0
+
+\f3 \cf4 \outl0\strokewidth0 Use a helper function inside the router to check token \
+\pard\pardeftab720\sl360\partightenfactor0
+\cf9 \cb6 \outl0\strokewidth0 \strokec9 const\cf4 \strokec4  \cf10 \strokec10 jwt\cf4 \strokec4  = \cf11 \strokec11 require\cf4 \strokec4 (\cf7 \strokec7 "jsonwebtoken"\cf4 \strokec4 );\cb1 \
+\
+\cf9 \cb6 \strokec9 const\cf4 \strokec4  \cf11 \strokec11 getTokenFrom\cf4 \strokec4  = (\cf5 \strokec5 request\cf4 \strokec4 ) \cf9 \strokec9 =>\cf4 \strokec4  \{\cb1 \
+\cb6   \cf9 \strokec9 const\cf4 \strokec4  \cf10 \strokec10 authorization\cf4 \strokec4  = \cf5 \strokec5 request\cf4 \strokec4 .\cf11 \strokec11 get\cf4 \strokec4 (\cf7 \strokec7 "authorization"\cf4 \strokec4 );\cb1 \
+\cb6   \cf13 \strokec13 if\cf4 \strokec4  (\cf5 \strokec5 authorization\cf4 \strokec4  && \cf5 \strokec5 authorization\cf4 \strokec4 .\cf11 \strokec11 toLowerCase\cf4 \strokec4 ().\cf11 \strokec11 startsWith\cf4 \strokec4 (\cf7 \strokec7 "bearer "\cf4 \strokec4 )) \{\cb1 \
+\cb6     \cf13 \strokec13 return\cf4 \strokec4  \cf5 \strokec5 authorization\cf4 \strokec4 .\cf11 \strokec11 substring\cf4 \strokec4 (\cf8 \strokec8 7\cf4 \strokec4 );\cb1 \
+\cb6   \}\cb1 \
+\cb6   \cf13 \strokec13 return\cf4 \strokec4  \cf9 \strokec9 null\cf4 \strokec4 ;\cb1 \
+\cb6 \};\cb1 \
+\
+inside whatever requires a token\'85\
+\cb6   \cf9 \strokec9 const\cf4 \strokec4  \cf10 \strokec10 decodedToken\cf4 \strokec4  = \cf5 \strokec5 jwt\cf4 \strokec4 .\cf11 \strokec11 verify\cf4 \strokec4 (\cf10 \strokec10 token\cf4 \strokec4 , \cf5 \strokec5 process\cf4 \strokec4 .\cf5 \strokec5 env\cf4 \strokec4 .\cf10 \strokec10 SECRET\cf4 \strokec4 );\cb1 \
+\cb6   \cf13 \strokec13 if\cf4 \strokec4  (!\cf10 \strokec10 token\cf4 \strokec4  || !\cf10 \strokec10 decodedToken\cf4 \strokec4 .\cf5 \strokec5 id\cf4 \strokec4 ) \{\cb1 \
+\cb6     \cf13 \strokec13 return\cf4 \strokec4  \cf5 \strokec5 response\cf4 \strokec4 .\cf11 \strokec11 status\cf4 \strokec4 (\cf8 \strokec8 401\cf4 \strokec4 ).\cf11 \strokec11 json\cf4 \strokec4 (\{ \cf5 \strokec5 error:\cf4 \strokec4  \cf7 \strokec7 "token missing or invalid"\cf4 \strokec4  \});\cb1 \
+\cb6   \}\cb1 \
+\cb6   \cf9 \strokec9 const\cf4 \strokec4  \cf10 \strokec10 user\cf4 \strokec4  = \cf13 \strokec13 await\cf4 \strokec4  \cf5 \strokec5 User\cf4 \strokec4 .\cf11 \strokec11 findById\cf4 \strokec4 (\cf10 \strokec10 decodedToken\cf4 \strokec4 .\cf5 \strokec5 id\cf4 \strokec4 );\cb1 \
+\
+\pard\pardeftab720\sl280\partightenfactor0
+
+\f10\b \cf4 \outl0\strokewidth0 Note about security\
+
+\f3\b0 The app uses an http server, but that\'92s OK: \'93
+\f4 \cf4 \outl0\strokewidth0 \strokec4 Heroku routes all traffic between a browser and the Heroku server over HTTPS.\'94
+\f3 \cf4 \outl0\strokewidth0  \
+\
+\pard\pardeftab720\sl280\partightenfactor0
+
+\f0\b\fs36 \cf4 \cb29 \kerning1\expnd0\expndtw0 Part 5\
+\pard\pardeftab720\sl280\partightenfactor0
+
+\f10\fs24 \cf4 \cb1 \expnd0\expndtw0\kerning0
+\
+Destructuring target from event handler in form fields\
+\pard\pardeftab720\sl280\partightenfactor0
+
+\f1\b0 \cf4 \outl0\strokewidth0 \strokec4 onChange=\{(\{ target \}) => setPassword(target.value)\}\
+\
+\pard\pardeftab720\sl280\partightenfactor0
+
+\f10\b \cf4 \outl0\strokewidth0 Setting/getting a token etc from local storage
+\f3\b0 \
+In our example, this is user object sent back from backend with username, name, and token\
+Set
+\f1 \cf4 \outl0\strokewidth0 \strokec4 \
+\pard\pardeftab720\sl360\partightenfactor0
+
+\f3 \cf5 \cb6 \strokec5 window\cf4 \strokec4 .\cf5 \strokec5 localStorage\cf4 \strokec4 .\cf11 \strokec11 setItem\cf4 \strokec4 (\cf7 \strokec7 "loggedInUser"\cf4 \strokec4 , \cf5 \strokec5 JSON\cf4 \strokec4 .\cf11 \strokec11 stringify\cf4 \strokec4 (\cf10 \strokec10 user\cf4 \strokec4 ));
+\f1 \cb1 \
+\pard\pardeftab720\sl280\partightenfactor0
+
+\f3 \cf4 \outl0\strokewidth0 Get\
+\pard\pardeftab720\sl360\partightenfactor0
+\cf9 \cb6 \outl0\strokewidth0 \strokec9 const\cf4 \strokec4  \cf10 \strokec10 savedUser\cf4 \strokec4  = \cf5 \strokec5 JSON\cf4 \strokec4 .\cf11 \strokec11 parse\cf4 \strokec4 (\cf5 \strokec5 window\cf4 \strokec4 .\cf5 \strokec5 localStorage\cf4 \strokec4 .\cf11 \strokec11 getItem\cf4 \strokec4 (\cf7 \strokec7 "loggedInUser"\cf4 \strokec4 ));\cb1 \
+\pard\pardeftab720\sl280\partightenfactor0
+\cf4 \outl0\strokewidth0 A common pattern is then setting state to savedUser || null
+\f1 \cf4 \outl0\strokewidth0 \strokec4 \
+\
+\pard\pardeftab720\sl280\partightenfactor0
+
+\f10\b \cf4 \outl0\strokewidth0 Saving and using token in services\
+\pard\pardeftab720\sl280\partightenfactor0
+
+\f3\b0 \cf4 as a global variable inside ex. noteService
+\f10\b \
+\pard\pardeftab720\sl360\partightenfactor0
+
+\f3\b0 \cf9 \cb6 \outl0\strokewidth0 \strokec9 let\cf4 \strokec4  \cf5 \strokec5 token\cf4 \strokec4  = \cf9 \strokec9 null\cf4 \cb1 \strokec4 \
+\cf9 \cb6 \strokec9 const\cf4 \strokec4  \cf11 \strokec11 setToken\cf4 \strokec4  = \cf5 \strokec5 newToken\cf4 \strokec4  \cf9 \strokec9 =>\cf4 \strokec4  \{  \
+	\cf5 \strokec5 token\cf4 \strokec4  = \cf7 \strokec7 `bearer \cf9 \strokec9 $\{\cf5 \strokec5 newToken\cf9 \strokec9 \}\cf7 \strokec7 `\
+\cf4 \strokec4 \}\cb1 \
+\pard\pardeftab720\sl280\partightenfactor0
+
+\f1 \cf4 \
+\pard\pardeftab720\sl280\partightenfactor0
+
+\f3 \cf4 \outl0\strokewidth0 a function that needs token. Now post has URL, new object, and authorization with the token
+\f1 \cf4 \outl0\strokewidth0 \strokec4 \
+\pard\pardeftab720\sl360\partightenfactor0
+
+\f3 \cf9 \cb6 \strokec9 const\cf4 \strokec4  \cf11 \strokec11 create\cf4 \strokec4  = \cf9 \strokec9 async\cf4 \strokec4  \cf5 \strokec5 newObject\cf4 \strokec4  \cf9 \strokec9 =>\cf4 \strokec4  \{\cb1 \
+\pard\pardeftab720\sl360\partightenfactor0
+\cf4 \cb6   \cf9 \strokec9 const\cf4 \strokec4  \cf10 \strokec10 config\cf4 \strokec4  = \{ \cf5 \strokec5 headers:\cf4 \strokec4  \{ \cf5 \strokec5 Authorization:\cf4 \strokec4  \cf5 \strokec5 token\cf4 \strokec4  \},  \}\cb1 \
+\cb6   \cf9 \strokec9 const\cf4 \strokec4  \cf10 \strokec10 response\cf4 \strokec4  = \cf13 \strokec13 await\cf4 \strokec4  \cf5 \strokec5 axios\cf4 \strokec4 .\cf11 \strokec11 post\cf4 \strokec4 (\cf5 \strokec5 baseUrl\cf4 \strokec4 , \cf5 \strokec5 newObject\cf4 \strokec4 , \cf10 \strokec10 config\cf4 \strokec4 )  \
+\pard\pardeftab720\sl360\partightenfactor0
+\cf4 \cb6 \outl0\strokewidth0   \cf5 \cb6 \outl0\strokewidth0 \strokec5 return\cf4 \strokec4  \cf10 \strokec10 response\cf4 \strokec4 .\cf5 \strokec5 data\cf4 \cb1 \strokec4 \
+\pard\pardeftab720\sl360\partightenfactor0
+\cf4 \cb6 \}\
+\
+setToken is called from app when loaded to check for user from localStorage, and upon successful login (inside login handler). Local storage also called inside login handler to save\
+\pard\pardeftab720\sl360\partightenfactor0
+\cf4 \cb1 \
+\pard\pardeftab720\sl280\partightenfactor0
+
+\f10\b \cf4 \outl0\strokewidth0 A component that wraps its children (props.children)
+\f3\b0 \cf4 \outl0\strokewidth0 \strokec4 \
+Use props.children in the render method and your component can contain other components\
+<Ocean name=\'93Pacific\'94>\
+<Fish />\
+</Ocean>\
+\pard\pardeftab720\sl280\partightenfactor0
+
+\f10\b \cf4 \outl0\strokewidth0 \
+Accessing a child component variable from parent 
+\f3\b0 \
+Without pulling it further up? Can do with useRef, See https://fullstackopen.com/en/part5/props_children_and_proptypes#references-to-components-with-ref\
+\
+
+\f10\b Testing React apps (\'93unit tests\'94)\
+\pard\pardeftab720\sl280\partightenfactor0
+
+\f1\b0 \cf26 \outl0\strokewidth0 \strokec4 npm install --save-dev @testing-library/react @testing-library/jest-dom\
+\
+\pard\pardeftab720\sl360\partightenfactor0
+
+\f3 \cf4 simple example. 
+\f4 The render method we used renders the components in a format that is suitable for tests without rendering them to the DOM.\
+\pard\pardeftab720\sl280\sa240\partightenfactor0
+
+\f7\i \cf4 render
+\f4\i0  returns an object that has several {\field{\*\fldinst{HYPERLINK "https://testing-library.com/docs/react-testing-library/api#render-result"}}{\fldrslt \cf30 \ul \ulc30 \strokec30 properties}}. One of the properties is called 
+\f7\i container
+\f4\i0 , and it contains all of the HTML rendered by the component.
+\f3 \
+\pard\pardeftab720\sl360\partightenfactor0
+\cf13 \cb6 \strokec13 import\cf4 \strokec4  \cf5 \strokec5 React\cf4 \strokec4  \cf13 \strokec13 from\cf4 \strokec4  \cf7 \strokec7 'react'\cf4 \cb1 \strokec4 \
+\cf13 \cb6 \strokec13 import\cf4 \strokec4  \cf7 \strokec7 '@testing-library/jest-dom/extend-expect'\cf4 \cb1 \strokec4 \
+\cf13 \cb6 \strokec13 import\cf4 \strokec4  \{ \cf5 \strokec5 render\cf4 \strokec4  \} \cf13 \strokec13 from\cf4 \strokec4  \cf7 \strokec7 '@testing-library/react'\cf4 \cb1 \strokec4 \
+\cf13 \cb6 \strokec13 import\cf4 \strokec4  \cf5 \strokec5 Note\cf4 \strokec4  \cf13 \strokec13 from\cf4 \strokec4  \cf7 \strokec7 './Note'\cf4 \cb1 \strokec4 \
+\
+\pard\pardeftab720\sl360\partightenfactor0
+\cf11 \cb6 \strokec11 test\cf4 \strokec4 (\cf7 \strokec7 'renders content'\cf4 \strokec4 , () \cf9 \strokec9 =>\cf4 \strokec4  \{\cb1 \
+\pard\pardeftab720\sl360\partightenfactor0
+\cf4 \cb6   \cf9 \strokec9 const\cf4 \strokec4  \cf10 \strokec10 note\cf4 \strokec4  = \{\cb1 \
+\cb6     \cf5 \strokec5 content:\cf4 \strokec4  \cf7 \strokec7 'Component testing is done with react-testing-library'\cf4 \strokec4 ,\cb1 \
+\cb6     \cf5 \strokec5 important:\cf4 \strokec4  \cf9 \strokec9 true\cf4 \cb1 \strokec4 \
+\cb6   \}\cb1 \
+\
+\cb6   \cf9 \strokec9 const\cf4 \strokec4  \cf10 \strokec10 component\cf4 \strokec4  = \cf11 \strokec11 render\cf4 \strokec4 (\cb1 \
+\cb6     \cf31 \strokec31 <\cf28 \strokec28 Note\cf4 \strokec4  \cf32 \strokec32 note\cf4 \strokec4 =\cf9 \strokec9 \{\cf10 \strokec10 note\cf9 \strokec9 \}\cf4 \strokec4  \cf31 \strokec31 />\cf4 \cb1 \strokec4 \
+\cb6   )\cb1 \
+\
+\cb6   \cf11 \strokec11 expect\cf4 \strokec4 (\cf10 \strokec10 component\cf4 \strokec4 .\cf5 \strokec5 container\cf4 \strokec4 ).\cf11 \strokec11 toHaveTextContent\cf4 \strokec4 (\cb1 \
+\cb6     \cf7 \strokec7 'Component testing is done with react-testing-library'\cf4 \cb1 \strokec4 \
+\cb6   )\cb1 \
+\cb6 \})\cb1 \
+\
+\pard\pardeftab720\sl360\partightenfactor0
+\cf4 \outl0\strokewidth0 npm test will start the tests, which will then hang there, watching, until you make a change.\
+Tests get stored in the same folder as component because that\'92s how it\'92s configured by default, but might consider changing that because I kind of hate it.\
+\
+Firing events and mock functions\
+\pard\pardeftab720\sl360\partightenfactor0
+\cf13 \cb6 \outl0\strokewidth0 \strokec13 import\cf4 \strokec4  \{ \cf5 \strokec5 render\cf4 \strokec4 , \cf5 \strokec5 fireEvent\cf4 \strokec4  \} \cf13 \strokec13 from\cf4 \strokec4  \cf7 \strokec7 '@testing-library/react'\cf4 \cb1 \strokec4 \
+\
+\pard\pardeftab720\sl360\partightenfactor0
+\cf24 \cb6 \strokec24 // ...\cf4 \cb1 \strokec4 \
+\
+\pard\pardeftab720\sl360\partightenfactor0
+\cf11 \cb6 \strokec11 test\cf4 \strokec4 (\cf7 \strokec7 'clicking the button calls event handler once'\cf4 \strokec4 , () \cf9 \strokec9 =>\cf4 \strokec4  \{\cb1 \
+\pard\pardeftab720\sl360\partightenfactor0
+\cf4 \cb6   \cf9 \strokec9 const\cf4 \strokec4  \cf10 \strokec10 note\cf4 \strokec4  = \{\cb1 \
+\cb6     \cf5 \strokec5 content:\cf4 \strokec4  \cf7 \strokec7 'Component testing is done with react-testing-library'\cf4 \strokec4 ,\cb1 \
+\cb6     \cf5 \strokec5 important:\cf4 \strokec4  \cf9 \strokec9 true\cf4 \cb1 \strokec4 \
+\cb6   \}\cb1 \
+\
+\cb6   \cf9 \strokec9 const\cf4 \strokec4  \cf10 \strokec10 mockHandler\cf4 \strokec4  = \cf5 \strokec5 jest\cf4 \strokec4 .\cf11 \strokec11 fn\cf4 \strokec4 ()\cb1 \
+\
+\cb6   \cf9 \strokec9 const\cf4 \strokec4  \cf10 \strokec10 component\cf4 \strokec4  = \cf11 \strokec11 render\cf4 \strokec4 (\cb1 \
+\cb6     \cf31 \strokec31 <\cf28 \strokec28 Note\cf4 \strokec4  \cf32 \strokec32 note\cf4 \strokec4 =\cf9 \strokec9 \{\cf10 \strokec10 note\cf9 \strokec9 \}\cf4 \strokec4  \cf32 \strokec32 toggleImportance\cf4 \strokec4 =\cf9 \strokec9 \{\cf10 \strokec10 mockHandler\cf9 \strokec9 \}\cf4 \strokec4  \cf31 \strokec31 />\cf4 \cb1 \strokec4 \
+\cb6   )\cb1 \
+\
+\cb6   \cf9 \strokec9 const\cf4 \strokec4  \cf10 \strokec10 button\cf4 \strokec4  = \cf10 \strokec10 component\cf4 \strokec4 .\cf11 \strokec11 getByText\cf4 \strokec4 (\cf7 \strokec7 'make not important'\cf4 \strokec4 )\cb1 \
+\cb6   \cf10 \strokec10 fireEvent\cf4 \strokec4 .\cf11 \strokec11 click\cf4 \strokec4 (\cf10 \strokec10 button\cf4 \strokec4 )\cb1 \
+\
+\cb6   \cf11 \strokec11 expect\cf4 \strokec4 (\cf10 \strokec10 mockHandler\cf4 \strokec4 .\cf5 \strokec5 mock\cf4 \strokec4 .\cf5 \strokec5 calls\cf4 \strokec4 ).\cf11 \strokec11 toHaveLength\cf4 \strokec4 (\cf8 \strokec8 1\cf4 \strokec4 )\cb1 \
+\cb6 \})\cb1 \
+\
+\pard\pardeftab720\sl360\partightenfactor0
+\cf4 \outl0\strokewidth0 Finding elements based on text (getByText) is the most foolproof way. You can also add class names or ids to make it easier to grab things, or use querySelector to get a type of element .querySelector(\'93form\'94)\
+\
+Check your test coverage with \
+\pard\pardeftab720\sl280\partightenfactor0
+
+\f1 \cf26 \outl0\strokewidth0 \strokec4 CI=true npm test -- --coverage\
+\pard\pardeftab720\sl360\partightenfactor0
+
+\f3 \cf4 \
+\pard\pardeftab720\sl280\partightenfactor0
+
+\f10\b \cf4 \outl0\strokewidth0 End to end testing\
+\pard\pardeftab720\sl280\partightenfactor0
+
+\f3\b0 \cf4 Cypress!\
+in frontend:\cf4 \outl0\strokewidth0 \strokec4 \
+\pard\pardeftab720\sl280\partightenfactor0
+
+\f1 \cf26 npm install --save-dev cypress\
+\pard\pardeftab720\sl280\partightenfactor0
+
+\f3 \cf4 \outl0\strokewidth0 new script:\
+\pard\pardeftab720\sl280\partightenfactor0
+
+\f1 \cf26 \outl0\strokewidth0 \strokec4 "cypress:open": "cypress open"\
+\pard\pardeftab720\sl280\partightenfactor0
+\cf26 \
+\pard\pardeftab720\sl280\partightenfactor0
+
+\f3 \cf4 \outl0\strokewidth0 new script in backend\
+\pard\pardeftab720\sl280\partightenfactor0
+
+\f1 \cf26 \outl0\strokewidth0 \strokec4 "start:test": "NODE_ENV=test node index.js"\
+\
+\pard\pardeftab720\sl280\partightenfactor0
+
+\f3 \cf4 \outl0\strokewidth0 start up both (remember backend in test mode, so npm run start:test) and cypress will make some folders 
+\f1 \cf26 \outl0\strokewidth0 \strokec4 \
+\
+\pard\pardeftab720\sl280\partightenfactor0
+
+\f3 \cf4 \outl0\strokewidth0 Delete the tests in integration/examples and add your own tests name.spec.js\
+\
+simple example\
+\pard\pardeftab720\sl360\partightenfactor0
+\cf11 \cb6 \outl0\strokewidth0 \strokec11 describe\cf4 \strokec4 (\cf7 \strokec7 'Note app'\cf4 \strokec4 , \cf9 \strokec9 function\cf4 \strokec4 () \{\cb1 \
+\pard\pardeftab720\sl360\partightenfactor0
+\cf4 \cb6   \cf11 \strokec11 beforeEach\cf4 \strokec4 (\cf9 \strokec9 function\cf4 \strokec4 () \{    \cf5 \strokec5 cy\cf4 \strokec4 .\cf11 \strokec11 visit\cf4 \strokec4 (\cf7 \strokec7 'http://localhost:3000'\cf4 \strokec4 )  \})\
+\pard\pardeftab720\sl360\partightenfactor0
+\cf4 \cb1 \
+\pard\pardeftab720\sl360\partightenfactor0
+\cf4 \cb6   \cf11 \strokec11 it\cf4 \strokec4 (\cf7 \strokec7 'front page can be opened'\cf4 \strokec4 , \cf9 \strokec9 function\cf4 \strokec4 () \{\cb1 \
+\cb6     \cf5 \strokec5 cy\cf4 \strokec4 .\cf11 \strokec11 contains\cf4 \strokec4 (\cf7 \strokec7 'Notes'\cf4 \strokec4 )\cb1 \
+\cb6     \cf5 \strokec5 cy\cf4 \strokec4 .\cf11 \strokec11 contains\cf4 \strokec4 (\cf7 \strokec7 'Note app, Department of Computer Science, University of Helsinki 2021'\cf4 \strokec4 )\cb1 \
+\cb6   \})\cb1 \
+\
+\cb6   \cf11 \strokec11 it\cf4 \strokec4 (\cf7 \strokec7 'login form can be opened'\cf4 \strokec4 , \cf9 \strokec9 function\cf4 \strokec4 () \{\cb1 \
+\cb6     \cf5 \strokec5 cy\cf4 \strokec4 .\cf11 \strokec11 contains\cf4 \strokec4 (\cf7 \strokec7 'log in'\cf4 \strokec4 ).\cf11 \strokec11 click\cf4 \strokec4 ()\cb1 \
+\cb6   \})\
+\pard\pardeftab720\sl360\partightenfactor0
+\cf4 \cb1 \
+\pard\pardeftab720\sl360\partightenfactor0
+\cf4 \cb6 \})\cb1 \
+\
+\pard\pardeftab720\sl280\partightenfactor0
+\cf4 \outl0\strokewidth0 Note you use .contains to check if it\'92s there, and also click it or whatever. Can also .get by id.\
+\pard\pardeftab720\sl360\partightenfactor0
+\cf5 \cb6 \outl0\strokewidth0 \strokec5 cy\cf4 \strokec4 .\cf11 \strokec11 contains\cf4 \strokec4 (\cf7 \strokec7 'log in'\cf4 \strokec4 ).\cf11 \strokec11 click\cf4 \strokec4 ()\cb1 \
+\cf5 \cb6 \strokec5 cy\cf4 \strokec4 .\cf11 \strokec11 get\cf4 \strokec4 (\cf7 \strokec7 '#username'\cf4 \strokec4 ).\cf11 \strokec11 type\cf4 \strokec4 (\cf7 \strokec7 'mluukkai'\cf4 \strokec4 )\cb1 \
+\pard\pardeftab720\sl280\partightenfactor0
+\cf4 \
+\pard\pardeftab720\sl280\partightenfactor0
+
+\f10\b \cf4 \outl0\strokewidth0 End to end testing and the database\
+
+\f3\b0 E2E tests don\'92t have access to database so you need to add a new router for the tests that is in the backend for test mode only.\
+Look here\
+https://fullstackopen.com/en/part5/end_to_end_testing#controlling-the-state-of-the-database\
+\
+
+\f10\b Cypress is too slow
+\f3\b0 \
+Use .only to run one test at a time\
+\
+
+\f10\b Bypass the UI 
+\f3\b0  \
+Only login through the UI once and then use cypress to directly post to login or whatever\
+\
+
+\f10\b Custom commands 
+\f3\b0 \
+Separate out commonly used actions into 
+\f9\i \cf4 \outl0\strokewidth0 \strokec4 cypress/support/commands.js
+\f1\i0 .\
+\
+\pard\pardeftab720\sl280\partightenfactor0
+
+\f0\b\fs36 \cf4 \cb33 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 Part 6\
+\pard\pardeftab720\sl280\partightenfactor0
+
+\f3\b0\fs24 \cf4 \cb1 \expnd0\expndtw0\kerning0
+Redux, which we\'92ve done a lot lately, so very briefly:\
+\pard\pardeftab720\sl280\partightenfactor0
+
+\f1 \cf26 \outl0\strokewidth0 \strokec4 npm install redux\
+npm install react-redux\
+npm install redux-thunk\
+\pard\pardeftab720\sl280\partightenfactor0
+\cf26 npm install --save-dev redux-devtools-extension
+\f3 \cf4 \outl0\strokewidth0 \
+\pard\pardeftab720\sl280\partightenfactor0
+\cf4 \
+
+\f10\b store.js
+\f3\b0 \
+\pard\pardeftab720\sl360\partightenfactor0
+\cf13 \cb6 \outl0\strokewidth0 \strokec13 import\cf4 \strokec4  \{ \cf5 \strokec5 createStore\cf4 \strokec4 , \cf5 \strokec5 combineReducers\cf4 \strokec4 , \cf5 \strokec5 applyMiddleware\cf4 \strokec4  \} \cf13 \strokec13 from\cf4 \strokec4  \cf7 \strokec7 "redux"\cf4 \strokec4 ;\cb1 \
+\cf13 \cb6 \strokec13 import\cf4 \strokec4  \cf5 \strokec5 thunk\cf4 \strokec4  \cf13 \strokec13 from\cf4 \strokec4  \cf7 \strokec7 "redux-thunk"\cf4 \strokec4 ;\cb1 \
+\cf13 \cb6 \strokec13 import\cf4 \strokec4  \{ \cf5 \strokec5 composeWithDevTools\cf4 \strokec4  \} \cf13 \strokec13 from\cf4 \strokec4  \cf7 \strokec7 "redux-devtools-extension"\cf4 \strokec4 ;\cb1 \
+\
+\cf13 \cb6 \strokec13 import\cf4 \strokec4  \cf5 \strokec5 messageReducer\cf4 \strokec4  \cf13 \strokec13 from\cf4 \strokec4  \cf7 \strokec7 "./reducers/messageReducer"\cf4 \strokec4 ;\cb1 \
+\cf13 \cb6 \strokec13 import\cf4 \strokec4  \cf5 \strokec5 blogReducer\cf4 \strokec4  \cf13 \strokec13 from\cf4 \strokec4  \cf7 \strokec7 "./reducers/blogReducer"\cf4 \strokec4 ;\cb1 \
+\cf13 \cb6 \strokec13 import\cf4 \strokec4  \cf5 \strokec5 userReducer\cf4 \strokec4  \cf13 \strokec13 from\cf4 \strokec4  \cf7 \strokec7 "./reducers/userReducer"\cf4 \strokec4 ;\cb1 \
+\cf13 \cb6 \strokec13 import\cf4 \strokec4  \cf5 \strokec5 usersReducer\cf4 \strokec4  \cf13 \strokec13 from\cf4 \strokec4  \cf7 \strokec7 "./reducers/usersReducer"\cf4 \strokec4 ;\cb1 \
+\
+\pard\pardeftab720\sl360\partightenfactor0
+\cf9 \cb6 \strokec9 const\cf4 \strokec4  \cf11 \strokec11 reducer\cf4 \strokec4  = \cf11 \strokec11 combineReducers\cf4 \strokec4 (\{\cb1 \
+\pard\pardeftab720\sl360\partightenfactor0
+\cf4 \cb6   \cf11 \strokec11 message\cf5 \strokec5 :\cf4 \strokec4  \cf11 \strokec11 messageReducer\cf4 \strokec4 ,\cb1 \
+\cb6   \cf11 \strokec11 blogs\cf5 \strokec5 :\cf4 \strokec4  \cf11 \strokec11 blogReducer\cf4 \strokec4 ,\cb1 \
+\cb6   \cf11 \strokec11 user\cf5 \strokec5 :\cf4 \strokec4  \cf11 \strokec11 userReducer\cf4 \strokec4 ,\cb1 \
+\cb6   \cf11 \strokec11 users\cf5 \strokec5 :\cf4 \strokec4  \cf11 \strokec11 usersReducer\cf4 \strokec4 ,\cb1 \
+\cb6 \});\cb1 \
+\
+\pard\pardeftab720\sl360\partightenfactor0
+\cf9 \cb6 \strokec9 const\cf4 \strokec4  \cf10 \strokec10 store\cf4 \strokec4  = \cf11 \strokec11 createStore\cf4 \strokec4 (\cf11 \strokec11 reducer\cf4 \strokec4 , \cf11 \strokec11 composeWithDevTools\cf4 \strokec4 (\cf11 \strokec11 applyMiddleware\cf4 \strokec4 (\cf10 \strokec10 thunk\cf4 \strokec4 )));\cb1 \
+\
+\pard\pardeftab720\sl360\partightenfactor0
+\cf13 \cb6 \strokec13 export\cf4 \strokec4  \cf13 \strokec13 default\cf4 \strokec4  \cf10 \strokec10 store\cf4 \strokec4 ;\
+\
+\pard\pardeftab720\sl280\partightenfactor0
+
+\f10\b \cf4 \cb1 \outl0\strokewidth0 index.js
+\f3\b0 \
+\pard\pardeftab720\sl360\partightenfactor0
+\cf13 \cb6 \outl0\strokewidth0 \strokec13 import\cf4 \strokec4  \cf5 \strokec5 React\cf4 \strokec4  \cf13 \strokec13 from\cf4 \strokec4  \cf7 \strokec7 "react"\cf4 \strokec4 ;\cb1 \
+\cf13 \cb6 \strokec13 import\cf4 \strokec4  \cf5 \strokec5 ReactDOM\cf4 \strokec4  \cf13 \strokec13 from\cf4 \strokec4  \cf7 \strokec7 "react-dom"\cf4 \strokec4 ;\cb1 \
+\cf13 \cb6 \strokec13 import\cf4 \strokec4  \{ \cf5 \strokec5 Provider\cf4 \strokec4  \} \cf13 \strokec13 from\cf4 \strokec4  \cf7 \strokec7 "react-redux"\cf4 \strokec4 ;\cb1 \
+\cf13 \cb6 \strokec13 import\cf4 \strokec4  \cf5 \strokec5 store\cf4 \strokec4  \cf13 \strokec13 from\cf4 \strokec4  \cf7 \strokec7 "./store"\cf4 \strokec4 ;\cb1 \
+\cf13 \cb6 \strokec13 import\cf4 \strokec4  \cf5 \strokec5 App\cf4 \strokec4  \cf13 \strokec13 from\cf4 \strokec4  \cf7 \strokec7 "./App"\cf4 \strokec4 ;\cb1 \
+\cf13 \cb6 \strokec13 import\cf4 \strokec4  \cf7 \strokec7 "./index.css"\cf4 \strokec4 ;\cb1 \
+\
+\cf5 \cb6 \strokec5 ReactDOM\cf4 \strokec4 .\cf11 \strokec11 render\cf4 \strokec4 (\cb1 \
+\cb6   \cf31 \strokec31 <\cf28 \strokec28 Provider\cf4 \strokec4  \cf32 \strokec32 store\cf4 \strokec4 =\cf9 \strokec9 \{\cf10 \strokec10 store\cf9 \strokec9 \}\cf31 \strokec31 >\cf4 \cb1 \strokec4 \
+\cb6         \cf31 \strokec31 <\cf28 \strokec28 App\cf4 \strokec4  \cf31 \strokec31 />\cf4 \cb1 \strokec4 \
+\cb6   \cf31 \strokec31 </\cf28 \strokec28 Provider\cf31 \strokec31 >\cf4 \strokec4 ,\cb1 \
+\cb6   \cf5 \strokec5 document\cf4 \strokec4 .\cf11 \strokec11 getElementById\cf4 \strokec4 (\cf7 \strokec7 "root"\cf4 \strokec4 )\cb1 \
+\cb6 );
+\f10\b \
+\
+Sample async action creator with thunk\
+
+\f3\b0 \cf13 \strokec13 export\cf4 \strokec4  \cf9 \strokec9 const\cf4 \strokec4  \cf11 \strokec11 setAllBlogs\cf4 \strokec4  = () \cf9 \strokec9 =>\cf4 \strokec4  \{\cb1 \
+\cb6   \cf13 \strokec13 return\cf4 \strokec4  \cf9 \strokec9 async\cf4 \strokec4  (\cf5 \strokec5 dispatch\cf4 \strokec4 ) \cf9 \strokec9 =>\cf4 \strokec4  \{\cb1 \
+\cb6     \cf9 \strokec9 const\cf4 \strokec4  \cf10 \strokec10 blogs\cf4 \strokec4  = \cf13 \strokec13 await\cf4 \strokec4  \cf5 \strokec5 blogService\cf4 \strokec4 .\cf11 \strokec11 getAll\cf4 \strokec4 ();\cb1 \
+\cb6     \cf11 \strokec11 dispatch\cf4 \strokec4 (\{\cb1 \
+\cb6       \cf5 \strokec5 type:\cf4 \strokec4  \cf7 \strokec7 "SET_ALL_BLOGS"\cf4 \strokec4 ,\cb1 \
+\cb6       \cf5 \strokec5 data:\cf4 \strokec4  \{ \cf5 \strokec5 blogs\cf4 \strokec4  \},\cb1 \
+\cb6     \});\cb1 \
+\cb6   \};\cb1 \
+\cb6 \};\
+\
+\pard\pardeftab720\sl360\partightenfactor0
+
+\f10\b \cf4 \cb6 \outl0\strokewidth0 Sample reducer\
+\pard\pardeftab720\sl360\partightenfactor0
+
+\f3\b0 \cf9 \cb6 \outl0\strokewidth0 \strokec9 const\cf4 \strokec4  \cf11 \strokec11 blogReducer\cf4 \strokec4  = (\cf5 \strokec5 state\cf4 \strokec4  = [], \cf5 \strokec5 action\cf4 \strokec4 ) \cf9 \strokec9 =>\cf4 \strokec4  \{\cb1 \
+\cb6   \cf13 \strokec13 switch\cf4 \strokec4  (\cf5 \strokec5 action\cf4 \strokec4 .\cf5 \strokec5 type\cf4 \strokec4 ) \{\cb1 \
+\cb6     \cf13 \strokec13 case\cf4 \strokec4  \cf7 \strokec7 "SET_ALL_BLOGS"\cf4 \strokec4 :\cb1 \
+\cb6       \cf13 \strokec13 return\cf4 \strokec4  \cf5 \strokec5 action\cf4 \strokec4 .\cf5 \strokec5 data\cf4 \strokec4 .\cf5 \strokec5 blogs\cf4 \strokec4 ;\cb1 \
+\cb6     \cf13 \strokec13 case\cf4 \strokec4  \cf7 \strokec7 "ADD_BLOG"\cf4 \strokec4 :\cb1 \
+\cb6       \cf13 \strokec13 return\cf4 \strokec4  \cf5 \strokec5 state\cf4 \strokec4 .\cf11 \strokec11 concat\cf4 \strokec4 (\cf5 \strokec5 action\cf4 \strokec4 .\cf5 \strokec5 data\cf4 \strokec4 .\cf5 \strokec5 addedBlog\cf4 \strokec4 );\cb1 \
+\cb6     \cf13 \strokec13 case\cf4 \strokec4  \cf7 \strokec7 "UPDATE_BLOG"\cf4 \strokec4 :\cb1 \
+\cb6       \cf13 \strokec13 return\cf4 \strokec4  \cf5 \strokec5 state\cf4 \strokec4 .\cf11 \strokec11 map\cf4 \strokec4 ((\cf5 \strokec5 item\cf4 \strokec4 ) \cf9 \strokec9 =>\cf4 \cb1 \strokec4 \
+\cb6         \cf5 \strokec5 item\cf4 \strokec4 .\cf5 \strokec5 id\cf4 \strokec4  === \cf5 \strokec5 action\cf4 \strokec4 .\cf5 \strokec5 data\cf4 \strokec4 .\cf5 \strokec5 updatedBlog\cf4 \strokec4 .\cf5 \strokec5 id\cf4 \strokec4  ? \cf5 \strokec5 action\cf4 \strokec4 .\cf5 \strokec5 data\cf4 \strokec4 .\cf5 \strokec5 updatedBlog\cf4 \strokec4  : \cf5 \strokec5 item\cf4 \cb1 \strokec4 \
+\cb6       );\cb1 \
+\cb6     \cf13 \strokec13 default\cf4 \strokec4 :\cb1 \
+\cb6       \cf13 \strokec13 return\cf4 \strokec4  \cf5 \strokec5 state\cf4 \strokec4 ;\cb1 \
+\cb6   \}\cb1 \
+\cb6 \};\cb1 \
+\pard\pardeftab720\sl360\partightenfactor0
+\cf4 \
+\pard\pardeftab720\sl360\partightenfactor0
+\cf13 \cb6 \strokec13 export\cf4 \strokec4  \cf13 \strokec13 default\cf4 \strokec4  \cf11 \strokec11 blogReducer\cf4 \strokec4 ;\cb1 \
+\
+\pard\pardeftab720\sl360\partightenfactor0
+
+\f10\b \cf4 Use action creator inside component \
+\pard\pardeftab720\sl360\partightenfactor0
+
+\f3\b0 \cf4 \cb6   \cf9 \strokec9 const\cf4 \strokec4  \cf11 \strokec11 dispatch\cf4 \strokec4  = \cf11 \strokec11 useDispatch\cf4 \strokec4 ();\cb1 \
+\pard\pardeftab720\sl360\partightenfactor0
+
+\f10\b \cf4 \
+\pard\pardeftab720\sl360\partightenfactor0
+
+\f3\b0 \cf11 \cb6 \strokec11 dispatch\cf4 \strokec4 (\cf11 \strokec11 setAllBlogs\cf4 \strokec4 (\cf10 \strokec10 updatedBlogs\cf4 \strokec4 ));\
+\
+\pard\pardeftab720\sl360\partightenfactor0
+
+\f10\b \cf4 \cb1 \outl0\strokewidth0 Getting store inside component\
+\pard\pardeftab720\sl360\partightenfactor0
+
+\f3\b0 \cf4 \cb6 \outl0\strokewidth0 \strokec4   \cf9 \strokec9 const\cf4 \strokec4  \cf10 \strokec10 blogs\cf4 \strokec4  = \cf11 \strokec11 useSelector\cf4 \strokec4 ((\cf5 \strokec5 state\cf4 \strokec4 ) \cf9 \strokec9 =>\cf4 \strokec4  \cf5 \strokec5 state\cf4 \strokec4 .\cf5 \strokec5 blogs\cf4 \strokec4 );\cb1 \
+\pard\pardeftab720\sl360\partightenfactor0
+\cf4 \
+\pard\pardeftab720\sl360\partightenfactor0
+\cf4 (skip connect, older version of useDispatch, useSelector)\
+\
+\pard\pardeftab720\sl280\partightenfactor0
+
+\f0\b\fs36 \cf4 \cb34 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 Part 7\
+\pard\pardeftab720\sl280\partightenfactor0
+
+\f10\fs24 \cf4 \cb1 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec4 React-router\
+\pard\pardeftab720\sl280\partightenfactor0
+
+\f1\b0 \cf26 npm install react-router-dom\
+\
+\pard\pardeftab720\sl280\partightenfactor0
+
+\f3 \cf4 \outl0\strokewidth0 inside index.js
+\f1 \cf4 \
+\pard\pardeftab720\sl360\partightenfactor0
+
+\f3 \cf13 \cb6 \outl0\strokewidth0 \strokec13 import\cf4 \strokec4  \{ \cf5 \strokec5 BrowserRouter\cf4 \strokec4  \cf13 \strokec13 as\cf4 \strokec4  \cf5 \strokec5 Router\cf4 \strokec4  \} \cf13 \strokec13 from\cf4 \strokec4  \cf7 \strokec7 "react-router-dom"\cf4 \strokec4 ;\cb1 \
+\
+\cf5 \cb6 \strokec5 ReactDOM\cf4 \strokec4 .\cf11 \strokec11 render\cf4 \strokec4 (\cb1 \
+\cb6     \cf31 \strokec31 <\cf28 \strokec28 Router\cf31 \strokec31 >\cf4 \cb1 \strokec4 \
+\cb6         \cf31 \strokec31 <\cf28 \strokec28 App\cf4 \strokec4  \cf31 \strokec31 />\cf4 \cb1 \strokec4 \
+\cb6     \cf31 \strokec31 </\cf28 \strokec28 Router\cf31 \strokec31 >\cf4 \cb1 \strokec4 \
+\cb6   \cf5 \strokec5 document\cf4 \strokec4 .\cf11 \strokec11 getElementById\cf4 \strokec4 (\cf7 \strokec7 "root"\cf4 \strokec4 )\cb1 \
+\cb6 );\cb1 \
+\pard\pardeftab720\sl280\partightenfactor0
+
+\f1 \cf26 \
+\pard\pardeftab720\sl280\partightenfactor0
+\cf26 \
+
+\f3 \cf4 inside app (including routeMatch)
+\f1 \
+\pard\pardeftab720\sl360\partightenfactor0
+
+\f3 \cf13 \cb6 \strokec13 import\cf4 \strokec4  \{ \cf5 \strokec5 Switch\cf4 \strokec4 , \cf5 \strokec5 Route\cf4 \strokec4 , \cf5 \strokec5 useRouteMatch\cf4 \strokec4 , \cf5 \strokec5 Redirect\cf4 \strokec4  \} \cf13 \strokec13 from\cf4 \strokec4  \cf7 \strokec7 "react-router-dom"\cf4 \strokec4 ;\
+\
+ \cf9 \strokec9 const\cf4 \strokec4  \cf10 \strokec10 match\cf4 \strokec4  = \cf11 \strokec11 useRouteMatch\cf4 \strokec4 (\cf7 \strokec7 "/users/:id"\cf4 \strokec4 );\cb1 \
+\cb6   \cf9 \strokec9 const\cf4 \strokec4  \cf10 \strokec10 matchUser\cf4 \strokec4  = \cf10 \strokec10 match\cf4 \cb1 \strokec4 \
+\cb6     ? \cf10 \strokec10 users\cf4 \strokec4 .\cf11 \strokec11 find\cf4 \strokec4 ((\cf5 \strokec5 user\cf4 \strokec4 ) \cf9 \strokec9 =>\cf4 \strokec4  \cf5 \strokec5 user\cf4 \strokec4 .\cf5 \strokec5 id\cf4 \strokec4  === \cf10 \strokec10 match\cf4 \strokec4 .\cf5 \strokec5 params\cf4 \strokec4 .\cf5 \strokec5 id\cf4 \strokec4 )\cb1 \
+\cb6     : \cf9 \strokec9 null\cf4 \strokec4 ;\cb1 \
+\
+\cb6     \cf31 \strokec31 <\cf28 \strokec28 Switch\cf31 \strokec31 >\cf4 \cb1 \strokec4 \
+\cb6         \cf31 \strokec31 <\cf28 \strokec28 Route\cf4 \strokec4  \cf32 \strokec32 path\cf4 \strokec4 =\cf7 \strokec7 "/users/:id"\cf31 \strokec31 >\cf4 \cb1 \strokec4 \
+\cb6           \cf9 \strokec9 \{\cf10 \strokec10 matchUser\cf4 \strokec4  ? \cf31 \strokec31 <\cf28 \strokec28 User\cf4 \strokec4  \cf32 \strokec32 user\cf4 \strokec4 =\cf9 \strokec9 \{\cf10 \strokec10 matchUser\cf9 \strokec9 \}\cf4 \strokec4  \cf31 \strokec31 />\cf4 \strokec4  : \cf31 \strokec31 <\cf28 \strokec28 Redirect\cf4 \strokec4  \cf32 \strokec32 to\cf4 \strokec4 =\cf7 \strokec7 "/users"\cf4 \strokec4  \cf31 \strokec31 />\cf9 \strokec9 \}\cf4 \cb1 \strokec4 \
+\cb6         \cf31 \strokec31 </\cf28 \strokec28 Route\cf31 \strokec31 >\cf4 \strokec4 \
+        \cf31 \strokec31 <\cf28 \strokec28 Route\cf4 \strokec4  \cf32 \strokec32 path\cf4 \strokec4 =\cf7 \strokec7 "/blogs"\cf31 \strokec31 >\cf4 \cb1 \strokec4 \
+\cb6           \cf31 \strokec31 <\cf28 \strokec28 Blogs\cf4 \strokec4  \cf32 \strokec32 showMessage\cf4 \strokec4 =\cf9 \strokec9 \{\cf11 \strokec11 showMessage\cf9 \strokec9 \}\cf4 \strokec4  \cf31 \strokec31 />\cf4 \cb1 \strokec4 \
+\cb6         \cf31 \strokec31 </\cf28 \strokec28 Route\cf31 \strokec31 >\cf4 \cb1 \strokec4 \
+\cb6     \cf31 \strokec31 </\cf28 \strokec28 Switch\cf31 \strokec31 >\cf4 \cb1 \strokec4 \
+\pard\pardeftab720\sl360\partightenfactor0
+\cf4  \
+\pard\pardeftab720\sl280\partightenfactor0
+\cf4 \outl0\strokewidth0 inside wherever your menu is
+\f2 \cf4 \
+\pard\pardeftab720\sl280\partightenfactor0
+
+\f3 \cf13 \cb6 \outl0\strokewidth0 \strokec13 import\cf4 \strokec4  \{ \cf5 \strokec5 Link\cf4 \strokec4  \} \cf13 \strokec13 from\cf4 \strokec4  \cf7 \strokec7 "react-router-dom"\cf4 \strokec4 ;\cb1 \
+
+\f1 \cf4 \outl0\strokewidth0 \
+\pard\pardeftab720\sl360\partightenfactor0
+
+\f3 \cf31 \cb6 \outl0\strokewidth0 \strokec31 <\cf28 \strokec28 Link\cf4 \strokec4  \cf32 \strokec32 to\cf4 \strokec4 =\cf7 \strokec7 "/"\cf31 \strokec31 >\cf4 \strokec4 home\cf31 \strokec31 </\cf28 \strokec28 Link\cf31 \strokec31 >\cf4 \cb1 \strokec4 \
+\cf31 \cb6 \strokec31 <\cf28 \strokec28 Link\cf4 \strokec4  \cf32 \strokec32 to\cf4 \strokec4 =\cf7 \strokec7 "/notes"\cf31 \strokec31 >\cf4 \strokec4 notes\cf31 \strokec31 </\cf28 \strokec28 Link\cf31 \strokec31 >\cf4 \cb1 \strokec4 \
+\cf31 \cb6 \strokec31 <\cf28 \strokec28 Link\cf4 \strokec4  \cf32 \strokec32 to\cf4 \strokec4 =\cf7 \strokec7 "/users"\cf31 \strokec31 >\cf4 \strokec4 users\cf31 \strokec31 </\cf28 \strokec28 Link\cf31 \strokec31 >\cf4 \cb1 \strokec4 \
+\pard\pardeftab720\sl280\partightenfactor0
+
+\f1 \cf4 \
+\pard\pardeftab720\sl280\partightenfactor0
+
+\f3 \cf4 \
+\pard\pardeftab720\sl280\partightenfactor0
+
+\f10\b \cf4 \outl0\strokewidth0 Custom hooks \
+\pard\pardeftab720\sl280\partightenfactor0
+
+\f3\b0 \cf4 example: useField for form fields\
+\pard\pardeftab720\sl360\partightenfactor0
+\cf9 \cb6 \outl0\strokewidth0 \strokec9 const\cf4 \strokec4  \cf11 \strokec11 useField\cf4 \strokec4  = (\cf5 \strokec5 type\cf4 \strokec4 ) \cf9 \strokec9 =>\cf4 \strokec4  \{\cb1 \
+\cb6   \cf9 \strokec9 const\cf4 \strokec4  [\cf10 \strokec10 value\cf4 \strokec4 , \cf10 \strokec10 setValue\cf4 \strokec4 ] = \cf11 \strokec11 useState\cf4 \strokec4 (\cf7 \strokec7 ''\cf4 \strokec4 )\cb1 \
+\
+\cb6   \cf9 \strokec9 const\cf4 \strokec4  \cf11 \strokec11 onChange\cf4 \strokec4  = (\cf5 \strokec5 event\cf4 \strokec4 ) \cf9 \strokec9 =>\cf4 \strokec4  \{\cb1 \
+\cb6     \cf11 \strokec11 setValue\cf4 \strokec4 (\cf5 \strokec5 event\cf4 \strokec4 .\cf5 \strokec5 target\cf4 \strokec4 .\cf5 \strokec5 value\cf4 \strokec4 )\cb1 \
+\cb6   \}\cb1 \
+\
+\cb6   \cf13 \strokec13 return\cf4 \strokec4  \{ \cf5 \strokec5 type\cf4 \strokec4 , \cf5 \strokec5 value\cf4 \strokec4 , \cf11 \strokec11 onChange\cf4 \strokec4  \}\cb1 \
+\cb6 \}\
+\
+use elsewhere like regular hook \cb1 \
+\pard\pardeftab720\sl280\partightenfactor0
+\cf4 \
+\pard\pardeftab720\sl360\partightenfactor0
+\cf9 \cb6 \strokec9 const\cf4 \strokec4  \cf10 \strokec10 name\cf4 \strokec4  = \cf11 \strokec11 useField\cf4 \strokec4 (\cf7 \strokec7 'text'\cf4 \strokec4 )\cb1 \
+\pard\pardeftab720\sl360\partightenfactor0
+\cf4 \
+can use spread attributes to plug everything into input\
+\pard\pardeftab720\sl360\partightenfactor0
+\cf31 \cb6 \strokec31 <input\cf4 \strokec4  \cf32 \strokec32 type\cf4 \strokec4 =\cf9 \strokec9 \{\cf5 \strokec5 name\cf4 \strokec4 .\cf5 \strokec5 type\cf9 \strokec9 \}\cf4 \strokec4  \cf32 \strokec32 value\cf4 \strokec4 =\cf9 \strokec9 \{\cf5 \strokec5 name\cf4 \strokec4 .\cf5 \strokec5 value\cf9 \strokec9 \}\cf4 \strokec4  \cf32 \strokec32 onChange\cf4 \strokec4 =\cf9 \strokec9 \{\cf5 \strokec5 name\cf4 \strokec4 .\cf5 \strokec5 onChange\cf9 \strokec9 \}\cf4 \strokec4  \cf31 \strokec31 />\cf4 \strokec4 ;\cb1 \
+\pard\pardeftab720\sl360\partightenfactor0
+\cf4 becomes\
+\pard\pardeftab720\sl360\partightenfactor0
+\cf31 \cb6 \strokec31 <input\cf4 \strokec4  \cf9 \strokec9 \{\cf4 \strokec4 ...\cf5 \strokec5 name\cf9 \strokec9 \}\cf4 \strokec4  \cf31 \strokec31 />\cf4 \strokec4  \cb1 \
+\pard\pardeftab720\sl360\partightenfactor0
+\cf4 \
+\pard\pardeftab720\sl280\partightenfactor0
+
+\f10\b \cf4 \outl0\strokewidth0 Styles\
+\pard\pardeftab720\sl280\partightenfactor0
+
+\f3\b0 \cf4 Overview of React Bootstrap, Material UI, and styled components. I preferred Material UI with custom color scheme (see part 7 extended-bloglist)\cf4 \outl0\strokewidth0 \strokec4 \
+\pard\pardeftab720\sl360\partightenfactor0
+\cf4 \
+\pard\pardeftab720\sl280\partightenfactor0
+
+\f10\b \cf4 \outl0\strokewidth0 Webpack\
+
+\f3\b0 See webpack-practice example for react, odin project notes for \'93vanilla\'94 Javascript. \
+\
+
+\f10\b Miscellaneous grab bag\
+
+\f3\b0 Class components, organization of code, where to put front end vs back end, polling and websockets, security, future trends, library and link round-up. }

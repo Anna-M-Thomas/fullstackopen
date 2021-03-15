@@ -73,3 +73,4 @@ describe("<Blog/> with mock handler", () => {
     expect(increaseLikes.mock.calls).toHaveLength(2);
   });
 });
+
